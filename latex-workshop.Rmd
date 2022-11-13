@@ -65,6 +65,11 @@ solidpink <- "#8E3B46"
 
 - Extensible document types (articles, presentation slides, books, theses, exam papers, etc.)
 
+::: {.alertblock latex="{Reminder}"}
+Sign up for Overleaf if you haven't done so!
+:::
+
+
 ### How does it work?
 
 - You write your document in `plain text` with commands that describe its structure and meaning.
@@ -381,23 +386,51 @@ Hello, World!  % your content goes here...
 
 \framesubtitle{Overleaf}
 
+::: {.columns}
+
+::: {.column width=30%}
+\centering
+\vspace{-2em}
+```{r overleaf, out.width = "90%"}
+knitr::include_graphics("figure/overleaf.png")
+```
+
+\vspace{-1em}
+
+https://www.overleaf.com/
+
+:::
+
+::: {.column width=68%}
+
+:::: {.varblock latex="{Exercise 1}"}
+1
+::::
+
+:::
+
+:::
+
+\vspace{1em}
+
 - Overleaf is a website for writing documents in \LaTeX
 
-- It 'compiles' your \LaTeX\ document automatically to show you the results
+- It 'compiles' your \LaTeX\ document online to show you the results
 
 - As we go through the following slides, try out the examples by typing them into the example document on Overleaf!
 
 
-
 ### Exercises
 
-1. Familiarising
-2. Article
-3. Mathematics
-4. Figures
-5. Referencing
+# Mathematics
 
+# Figures and others
 
+# Document structure
+
+# Bibliography
+
+# What's next?
 
 
 

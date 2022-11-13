@@ -7,6 +7,14 @@
 
 \usetheme[$if(progressdots)$progressdots,$endif$$if(transitions)$transitions,$endif$$if(banner)$banner,$endif$$if(logo)$logo$endif$]{ubd}
 
+\newcommand{\prevarblock}{%
+ \setbeamercolor{block title}{fg=lightcyan!50,bg=myrtlegreen}
+ \setbeamercolor{block body}{parent=normal text,bg=lightcyan!50,fg=myrtlegreen}
+}
+\newenvironment{varblock}[1]{%
+  \prevarblock
+  \begin{block}{#1}}{\end{block}}
+
 % Information for the title page -------------------------------------------------------------
 $if(author)$
 \author{$author$}

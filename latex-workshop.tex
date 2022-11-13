@@ -7,6 +7,14 @@
 
 \usetheme[progressdots,transitions,banner,logo]{ubd}
 
+\newcommand{\prevarblock}{%
+ \setbeamercolor{block title}{fg=lightcyan!50,bg=myrtlegreen}
+ \setbeamercolor{block body}{parent=normal text,bg=lightcyan!50,fg=myrtlegreen}
+}
+\newenvironment{varblock}[1]{%
+  \prevarblock
+  \begin{block}{#1}}{\end{block}}
+
 % Information for the title page -------------------------------------------------------------
 \author{Haziq Jamil}
 
@@ -742,34 +750,59 @@ early on (祖冲之 Zǔ Chōng Zhī, 500 CE).
 \protect\hypertarget{getting-started-2}{}
 \framesubtitle{Overleaf}
 
+\begin{columns}[T]
+\begin{column}{0.3\textwidth}
+\centering
+\vspace{-2em}
+
+\begin{center}\includegraphics[width=0.9\linewidth]{figure/overleaf} \end{center}
+
+\vspace{-1em}
+
+\url{https://www.overleaf.com/}
+\end{column}
+
+\begin{column}{0.68\textwidth}
+\begin{varblock}{Exercise 1}
+1
+
+\end{varblock}
+\end{column}
+\end{columns}
+
+\vspace{1em}
+
 \begin{itemize}
 \item
   Overleaf is a website for writing documents in \LaTeX
 \item
-  It `compiles' your \LaTeX~document automatically to show you the
-  results
+  It `compiles' your \LaTeX~document online to show you the results
 \item
   As we go through the following slides, try out the examples by typing
   them into the example document on Overleaf!
 \end{itemize}
+
+\begin{alertblock}{Reminder}
+Sign up for Overleaf
+
+\end{alertblock}
 \end{frame}
 
 \begin{frame}{Exercises}
 \protect\hypertarget{exercises}{}
-\begin{enumerate}
-\tightlist
-\item
-  Familiarising
-\item
-  Article
-\item
-  Mathematics
-\item
-  Figures
-\item
-  Referencing
-\end{enumerate}
 \end{frame}
+
+\hypertarget{mathematics}{%
+\section{Mathematics}\label{mathematics}}
+
+\hypertarget{figures-and-others}{%
+\section{Figures and others}\label{figures-and-others}}
+
+\hypertarget{document-structure}{%
+\section{Document structure}\label{document-structure}}
+
+\hypertarget{bibliography}{%
+\section{Bibliography}\label{bibliography}}
 
 
 

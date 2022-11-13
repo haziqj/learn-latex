@@ -3,3 +3,4 @@
 *_cache/*
 .texpadtmp
 *.log
+.Rproj.user
