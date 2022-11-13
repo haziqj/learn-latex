@@ -151,7 +151,7 @@
 % % Fix for footnotes not showing when using \footnote<.->
 % \let\oldfootnote\footnote
 % \renewcommand{\footnote}{\only<+->\oldfootnote}
-% % https://stackoverflow.com/questions/62345074/show-footnote-only-after-a-pause-in-beamer-with-r-markdown
+% https://stackoverflow.com/questions/62345074/show-footnote-only-after-a-pause-in-beamer-with-r-markdown
 
 % Fonts -----------------------------------------------------------------------------------
 \usepackage{cmbright}
@@ -558,7 +558,7 @@ y = \alpha + \beta x
 
 \vspace{0.5em}
 
-\begin{center}\includegraphics{figure/latexgraph-1} \end{center}
+\begin{center}\includegraphics[width=1\linewidth]{figure/latexgraph-1} \end{center}
 \end{frame}
 
 \begin{frame}{Things that it solves: Picture alignment/placement}
@@ -567,7 +567,7 @@ y = \alpha + \beta x
 
 \begin{columns}[T]
 \begin{column}{0.64\textwidth}
-\begin{center}\includegraphics{figure/piechart-1} \end{center}
+\begin{center}\includegraphics[width=1\linewidth]{figure/piechart-1} \end{center}
 \end{column}
 
 \begin{column}{0.33\textwidth}
@@ -773,7 +773,7 @@ early on (祖冲之 Zǔ Chōng Zhī, 500 CE).
 
 \begin{varblock}{Exercise (Hello world)}
 Click
-\hyperlink{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/00-hello_world/00-hello_world.tex&splash=none}{\beamerbutton{Hello World}}
+\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/00-hello_world/00-hello_world.tex&splash=none}{\beamerbutton{Hello World}}
 to open the ``Hello world'' document in \textbf{Overleaf} (you'll need
 to sign in first). Let's get started!
 
@@ -960,7 +960,7 @@ raised the current debt ceiling to \$11.3 trillion.
 
 \begin{varblock}{Exercise 1}
 Click
-\hyperlink{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/01-getting_started/01-getting_started.tex&splash=none}{\beamerbutton{Exercise 1}}
+\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/01-getting_started/01-getting_started.tex&splash=none}{\beamerbutton{Exercise 1}}
 to open this exercise in \textbf{Overleaf}.
 
 \end{varblock}
@@ -979,14 +979,395 @@ Watch out for
 \hypertarget{mathematics}{%
 \section{Mathematics}\label{mathematics}}
 
-\hypertarget{figures-and-others}{%
-\section{Figures and others}\label{figures-and-others}}
+\hypertarget{inline-equations}{%
+\subsection{Inline equations}\label{inline-equations}}
 
-\hypertarget{document-structure}{%
-\section{Document structure}\label{document-structure}}
+\begin{frame}[fragile]{Inline equations}
+\begin{itemize}
+\tightlist
+\item
+  Dollar signs \framebox{\texttt{\$}} are used to mark mathematics in
+  text.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% not so good:}
+\NormalTok{Let a and b be distinct positive}
+\NormalTok{integers, and let c = a {-} b + 1.}
+
+\CommentTok{\% much better:}
+\NormalTok{Let }\SpecialStringTok{$a$}\NormalTok{ and }\SpecialStringTok{$b$}\NormalTok{ be distinct }
+\NormalTok{positive integers, and let }
+\SpecialStringTok{$c = a {-} b + 1$}\NormalTok{.}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\vspace{1em}
+
+Let a and b be distinct positive integers, and let c = a - b + 1.
+
+\hfill\break
+
+Let \(a\) and \(b\) be distinct positive integers, and let
+\(c = a - b + 1\).
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\item
+  Always use dollar signs in pairs--one to \textbf{begin} and one to
+  \textbf{end}.
+\item
+  \LaTeX~handles spacing automatically; it ignores your spaces.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Let }\SpecialStringTok{$y=mx+c$}\NormalTok{ be }\FunctionTok{\textbackslash{}ldots}
+
+\NormalTok{Let }\SpecialStringTok{$y = m x + c$}\NormalTok{ be }\FunctionTok{\textbackslash{}ldots}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+Let \(y=mx+c\) be \ldots
+
+\vspace{1em}
+
+Let \(y = m x + c\) be \ldots
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{More notation}
+\protect\hypertarget{more-notation}{}
+\begin{itemize}
+\tightlist
+\item
+  Use caret/hat \framebox{\ \texttt{\^}} for superscripts and underscore
+  \framebox{$\vphantom{a}$\texttt{\_}} for subscripts.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.58\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{$y = c\_2 x\^{}2 + c\_1 x + c\_0$}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\(y = c_2 x^2 + c_1 x + c_0\)
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\tightlist
+\item
+  Use curly braces \framebox{\texttt{\{}} \framebox{\texttt{\}}} to
+  group supers/sub scripts.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.58\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% oops!}
+\SpecialStringTok{$F\_n = F\_n{-}1 + F\_n{-}2$} 
+
+\CommentTok{\% ok!}
+\SpecialStringTok{$F\_n = F\_\{n{-}1\} + F\_\{n{-}2\}$}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\vspace{1em}
+
+\(F_n = F_n-1 + F_n-2\)
+
+\vspace{2em}
+
+\(F_n = F_{n-1} + F_{n-2}\)
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\tightlist
+\item
+  There are commands for Greek letters and common notation.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.58\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}mu}\SpecialStringTok{ = A e\^{}\{Q/RT\}$}
+
+\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}Omega}\SpecialStringTok{ = }\SpecialCharTok{\textbackslash{}sum}\SpecialStringTok{\_\{k=1\}\^{}\{n\} }\SpecialCharTok{\textbackslash{}omega}\SpecialStringTok{\_k$}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\(\mu = A e^{Q/RT}\)
+
+\vspace{1em}
+
+\(\Omega = \sum_{k=1}^{n} \omega_k\)
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Detexify}
+\protect\hypertarget{detexify}{}
+\centering
+\vspace{-0.5em}
+
+\href{https://detexify.kirelabs.org/classify.html}{\includegraphics{figure/detexify.png}}
+\end{frame}
+
+\hypertarget{displayed-equations}{%
+\subsection{Displayed equations}\label{displayed-equations}}
+
+\begin{frame}[fragile]{Displayed equations}
+\begin{itemize}
+\tightlist
+\item
+  If the mathematics is big and scary, \emph{display} it on its own line
+  using
+  \VERB|\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}|
+  and
+  \VERB|\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}|
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.58\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{The roots of a quadratic equation are }
+\NormalTok{given by}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
+\SpecialStringTok{x = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{{-}b }\SpecialCharTok{\textbackslash{}pm}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}sqrt}\SpecialStringTok{\{b\^{}2 {-} 4ac\}\}}
+\SpecialStringTok{         \{2a\} }
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
+\NormalTok{where }\SpecialStringTok{$a$}\NormalTok{, }\SpecialStringTok{$b$}\NormalTok{ and }\SpecialStringTok{$c$}\NormalTok{ are }\FunctionTok{\textbackslash{}ldots}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+The roots of a quadratic equation are given by \begin{equation}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}
+{2a} \end{equation} where \(a\), \(b\) and \(c\) are \ldots
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{alertblock}{Caution}
+\LaTeX~ mostly ignores your spaces in mathematics, but it can't handle
+blank lines in equations--don't put blank lines in your mathematics.
+
+\end{alertblock}
+\end{frame}
+
+\hypertarget{interlude-environments}{%
+\subsection{Interlude: Environments}\label{interlude-environments}}
+
+\begin{frame}[fragile]{Interlude: Environments}
+\begin{itemize}
+\item
+  \texttt{equation} is an \emph{environment} (a context).
+\item
+  The \VERB|\KeywordTok{\textbackslash{}begin}| and
+  \VERB|\KeywordTok{\textbackslash{}end}| commands are used to create
+  many different environments. E.g., \texttt{itemize} and
+  \texttt{enumerate} for lists:
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.58\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{itemize}\NormalTok{\} }\CommentTok{\% for bullet points }
+\FunctionTok{\textbackslash{}item}\NormalTok{ Biscuits}
+\FunctionTok{\textbackslash{}item}\NormalTok{ Tea}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{itemize}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{enumerate}\NormalTok{\} }\CommentTok{\% for numbers }
+\FunctionTok{\textbackslash{}item}\NormalTok{ Biscuits}
+\FunctionTok{\textbackslash{}item}\NormalTok{ Tea}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{enumerate}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\vspace{1em}
+
+\begin{itemize}
+\tightlist
+\item
+  Biscuits
+\item
+  Tea
+\end{itemize}
+
+\vspace{2em}
+
+\begin{enumerate}
+\tightlist
+\item
+  Biscuits
+\item
+  Tea
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\hypertarget{interlude-packages}{%
+\subsection{Interlude: Packages}\label{interlude-packages}}
+
+\begin{frame}[fragile]{Interlude: Packages}
+\begin{itemize}
+\item
+  All of the commands and environments we've used so far are built into
+  \LaTeX .
+\item
+  \emph{Packages} are libraries of extra commands and evironments. There
+  are thousands of freely available packages.
+\item
+  We have to load each package we want to use with a
+  \VERB|\BuiltInTok{\textbackslash{}usepackage}| commands in the
+  \emph{preamble}.
+\item
+  Example: \texttt{amsmath} from the American Mathematical Society.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{amsmath}\NormalTok{\} }\CommentTok{\% preamble }
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\CommentTok{\% now we can use commands from amsmath here... }
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{An example with \texttt{amsmath}}
+\protect\hypertarget{an-example-with-amsmath}{}
+\begin{itemize}
+\tightlist
+\item
+  Align a sequence of equations at the equals sign \begin{align*}
+  (x+1)^3 &= (x+1)(x+1)(x+1) \\
+  &= (x+1)(x^2 + 2x + 1) \\
+  &= x^3 + 3x^2 + 3x + 1 
+  \end{align*} with the \texttt{align*} environment.
+\end{itemize}
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{align*}\NormalTok{\}}
+\SpecialStringTok{(x+1)\^{}3 \&= (x+1)(x+1)(x+1) }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{\&= (x+1)(x\^{}2 + 2x + 1) }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{\&= x\^{}3 + 3x\^{}2 + 3x + 1 }
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{align*}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+\begin{itemize}
+\item
+  An ampersand \framebox{\texttt{\&}} separates the left column (before
+  the \(=\)) from the right column (after the \(=\)).
+\item
+  A double backslash \framebox{\texttt{\textbackslash\textbackslash}}
+  starts a new line.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Exercise 2}
+\protect\hypertarget{exercise-2}{}
+\begin{varblock}{Exercise 2}
+Typeset the following paragraph in \LaTeX :
+
+\begin{quote}
+Let \(X_1, X_2, \ldots, X_n\) be a sequence of independent and
+identically distributed random variables with
+\(\operatorname{E}[X_i] = \mu\) and
+\(\operatorname{Var}[X_i] = \sigma^2 < \infty\), and let
+\begin{equation*}
+S_n = \frac{1}{n}\sum_{i=1}^{n} X_i
+\end{equation*} denote their mean. Then as \(n\) approaches infinity,
+the random variables \(\sqrt{n}(S_n - \mu)\) converge in distribution to
+a normal \(N(0, \sigma^2)\).
+\end{quote}
+
+Click
+\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/02-mathematics/02-mathematics.tex&splash=none}{\beamerbutton{Exercise 2}}
+to open this exercise in \textbf{Overleaf}.
+
+\end{varblock}
+\end{frame}
+
+\hypertarget{figures}{%
+\section{Figures}\label{figures}}
+
+\hypertarget{structure}{%
+\section{Structure}\label{structure}}
 
 \hypertarget{bibliography}{%
 \section{Bibliography}\label{bibliography}}
+
+\hypertarget{whats-next}{%
+\section{What's next?}\label{whats-next}}
+
+\begin{frame}{What's next?}
+Thanks!
+\end{frame}
 
 
 
