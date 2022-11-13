@@ -13,7 +13,8 @@ output:
     slide_level: 3
     keep_tex: true
     citation_package: biblatex
-    pandoc_args: ["--lua-filter=/Library/Frameworks/R.framework/Versions/4.2/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua", "--lua-filter=my_filter.lua"]    
+    pandoc_args: ["--lua-filter=/Library/Frameworks/R.framework/Versions/4.2/Resources/library/bookdown/rmarkdown/lua/custom-environment.lua"]    
+    highlight: espresso
     # includes:
     #   after_body: afterbody.txt
 toc: true
@@ -384,43 +385,182 @@ Hello, World!  % your content goes here...
 
 ### Getting started
 
-\framesubtitle{Overleaf}
+<!-- \framesubtitle{Overleaf} -->
 
-::: {.columns}
-
-::: {.column width=30%}
-\centering
-\vspace{-2em}
-```{r overleaf, out.width = "90%"}
+```{r overleaf, out.width = "50%"}
 knitr::include_graphics("figure/overleaf.png")
 ```
 
-\vspace{-1em}
-
+::: {.center latex=""}
 https://www.overleaf.com/
-
 :::
 
-::: {.column width=68%}
 
-:::: {.varblock latex="{Exercise 1}"}
-1
-::::
+- Overleaf is a website for writing documents in \LaTeX.
 
-:::
-
-:::
-
-\vspace{1em}
-
-- Overleaf is a website for writing documents in \LaTeX
-
-- It 'compiles' your \LaTeX\ document online to show you the results
+- It 'compiles' your \LaTeX\ document online to show you the results.
 
 - As we go through the following slides, try out the examples by typing them into the example document on Overleaf!
 
 
-### Exercises
+
+:::: {.varblock latex="{Exercise (Hello world)}"}
+
+Click 
+\hyperlink{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/00-hello_world/00-hello_world.tex&splash=none}{\beamerbutton{Hello World}}
+to open the "Hello world" document in **Overleaf**
+(you'll need to sign in first).
+Let's get started!
+
+::::
+
+
+
+### Typesetting text
+
+- Type your text between `\begin{document}`{.latex} and `\end{document}`{.latex}.
+
+- For the most part, you can just type your text normally.
+
+::: {.columns}
+
+::: {.column width=48%}
+\vspace{-1em}
+```latex
+Words are separated by one 
+or more spaces.
+
+Paragraphs are separated by 
+one or more blank lines.
+```
+:::
+
+::: {.column width=48%}
+
+Words are separated by one 
+or more spaces.
+
+\ 
+
+Paragraphs are separated by 
+one or more blank lines.
+:::
+
+:::
+
+\vspace{0.5em}
+
+- Blank space in the source file is collaped in the output.
+
+
+::: {.columns}
+
+::: {.column width=48%}
+\vspace{-1em}
+```latex
+The      rain    in   Spain
+falls mainly on the   plain.
+```
+:::
+
+::: {.column width=48%}
+The      rain    in   Spain
+falls mainly on the   plain.
+:::
+
+:::
+
+### Typesetting text (Caveats)
+
+- Quotation marks a bit tricky: Use a backtick \framebox{\texttt{`}} on the left and an apostrophe \framebox{\texttt{'}} on the right.
+
+::: {.columns}
+
+::: {.column width=48%}
+\vspace{-1em}
+```latex
+Single quotes: `text'.
+
+Double quotes: ``text''.
+```
+:::
+
+::: {.column width=48%}
+Single quotes: 'text'.
+
+\ 
+
+Double quotes: "text".
+:::
+
+:::
+
+\vspace{0.5em}
+
+- Some common characters have special meanings in \LaTeX :
+
+    - \framebox{\texttt{\%}} is used to comment text
+    - \framebox{\texttt{\#}} is used for macros definitions
+    - \framebox{\texttt{\&}} is used for alignment
+    - \framebox{\texttt{\$}} is used for maths
+
+- If you just type these, you'll get an error. If you want one to appear in the output, you have to *escape* it by preceding it with a backslash \framebox{\texttt{\textbackslash}}.
+
+::: {.columns}
+
+::: {.column width=48%}
+\vspace{-1em}
+```latex
+\$ \% \& \# 
+```
+:::
+
+::: {.column width=48%}
+$ % & #
+:::
+
+:::
+
+### Handling errors
+
+- \LaTeX\ can get confused when it is trying to compile your document. If it does, it stops with an error, which you must fix before it will produce any output.
+
+- For example, if you misspell `\emph`{.latex} as `\meph`{.latex}, \LaTeX\ will stop with an `undefined control sequence` error, because `\meph`{.latex} is not one of the commands it knows.
+
+::: {.block latex="{Advice on errors}"}
+
+1. Don't panic! Errors happen. The error messages can give a clue as to what's wrong.
+
+2. Fix them as soon as they arise--if what you just typed caused an error, you can start your debugging there.
+
+3. If there are multiple errors, start with the first one--the cause may even be above it.
+
+:::
+
+### Exercise 1
+
+Typeset the following paragraph\footnote{\url{http://en.wikipedia.org/wiki/Economy_of_the_United_States}} in \LaTeX :
+
+> In March 2006, Congress raised that ceiling an additional $0.79 trillion to $8.97 trillion, which is approximately 68% of GDP. As of October 4, 2008, the “Emergency Economic Stabilization Act of 2008” raised the current debt ceiling to $11.3 trillion.
+
+:::: {.varblock latex="{Exercise 1}"}
+
+Click 
+\hyperlink{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/01-getting_started/01-getting_started.tex&splash=none}{\beamerbutton{Exercise 1}}
+to open this exercise in **Overleaf**.
+
+::::
+
+Watch out for 
+
+- characters with special meanings  \framebox{\texttt{\%}} \framebox{\texttt{\#}} \framebox{\texttt{\&}} \framebox{\texttt{\$}} 
+
+- typesetting quotation marks correctly.
+
+
+
+
+
 
 # Mathematics
 

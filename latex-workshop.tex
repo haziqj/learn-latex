@@ -13,6 +13,7 @@
 }
 \newenvironment{varblock}[1]{%
   \prevarblock
+  \vspace{0.5em}
   \begin{block}{#1}}{\end{block}}
 
 % Information for the title page -------------------------------------------------------------
@@ -62,39 +63,39 @@
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
 % Add ',fontsize=\small' for more characters per line
 \usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
+\definecolor{shadecolor}{RGB}{240, 237, 230}
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
 \newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
 \newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
 \newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
 \newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
 \newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -449,6 +450,11 @@
   Extensible document types (articles, presentation slides, books,
   theses, exam papers, etc.)
 \end{itemize}
+
+\begin{alertblock}{Reminder}
+Sign up for Overleaf if you haven't done so!
+
+\end{alertblock}
 \end{frame}
 
 \begin{frame}[fragile]{How does it work?}
@@ -748,48 +754,226 @@ early on (祖冲之 Zǔ Chōng Zhī, 500 CE).
 
 \begin{frame}{Getting started}
 \protect\hypertarget{getting-started-2}{}
-\framesubtitle{Overleaf}
+\begin{center}\includegraphics[width=0.5\linewidth]{figure/overleaf} \end{center}
 
-\begin{columns}[T]
-\begin{column}{0.3\textwidth}
-\centering
-\vspace{-2em}
-
-\begin{center}\includegraphics[width=0.9\linewidth]{figure/overleaf} \end{center}
-
-\vspace{-1em}
-
+\begin{center}
 \url{https://www.overleaf.com/}
-\end{column}
 
-\begin{column}{0.68\textwidth}
-\begin{varblock}{Exercise 1}
-1
-
-\end{varblock}
-\end{column}
-\end{columns}
-
-\vspace{1em}
+\end{center}
 
 \begin{itemize}
 \item
-  Overleaf is a website for writing documents in \LaTeX
+  Overleaf is a website for writing documents in \LaTeX.
 \item
-  It `compiles' your \LaTeX~document online to show you the results
+  It `compiles' your \LaTeX~document online to show you the results.
 \item
   As we go through the following slides, try out the examples by typing
   them into the example document on Overleaf!
 \end{itemize}
 
-\begin{alertblock}{Reminder}
-Sign up for Overleaf
+\begin{varblock}{Exercise (Hello world)}
+Click
+\hyperlink{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/00-hello_world/00-hello_world.tex&splash=none}{\beamerbutton{Hello World}}
+to open the ``Hello world'' document in \textbf{Overleaf} (you'll need
+to sign in first). Let's get started!
 
-\end{alertblock}
+\end{varblock}
 \end{frame}
 
-\begin{frame}{Exercises}
-\protect\hypertarget{exercises}{}
+\begin{frame}[fragile]{Typesetting text}
+\protect\hypertarget{typesetting-text}{}
+\begin{itemize}
+\item
+  Type your text between
+  \VERB|\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}|
+  and
+  \VERB|\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}|.
+\item
+  For the most part, you can just type your text normally.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Words are separated by one }
+\NormalTok{or more spaces.}
+
+\NormalTok{Paragraphs are separated by }
+\NormalTok{one or more blank lines.}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+Words are separated by one or more spaces.
+
+~
+
+Paragraphs are separated by one or more blank lines.
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\tightlist
+\item
+  Blank space in the source file is collaped in the output.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{The      rain    in   Spain}
+\NormalTok{falls mainly on the   plain.}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+The rain in Spain falls mainly on the plain.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Typesetting text (Caveats)}
+\protect\hypertarget{typesetting-text-caveats}{}
+\begin{itemize}
+\tightlist
+\item
+  Quotation marks a bit tricky: Use a backtick \framebox{\texttt{`}} on
+  the left and an apostrophe \framebox{\texttt{'}} on the right.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Single quotes: \textasciigrave{}text\textquotesingle{}.}
+
+\NormalTok{Double quotes: \textasciigrave{}\textasciigrave{}text\textquotesingle{}\textquotesingle{}.}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+Single quotes: `text'.
+
+~
+
+Double quotes: ``text''.
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\item
+  Some common characters have special meanings in \LaTeX :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \framebox{\texttt{\%}} is used to comment text
+  \item
+    \framebox{\texttt{\#}} is used for macros definitions
+  \item
+    \framebox{\texttt{\&}} is used for alignment
+  \item
+    \framebox{\texttt{\$}} is used for maths
+  \end{itemize}
+\item
+  If you just type these, you'll get an error. If you want one to appear
+  in the output, you have to \emph{escape} it by preceding it with a
+  backslash \framebox{\texttt{\textbackslash}}.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}$} \FunctionTok{\textbackslash{}\%} \FunctionTok{\textbackslash{}\&} \FunctionTok{\textbackslash{}\#} 
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\$ \% \& \#
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Handling errors}
+\protect\hypertarget{handling-errors}{}
+\begin{itemize}
+\item
+  \LaTeX~can get confused when it is trying to compile your document. If
+  it does, it stops with an error, which you must fix before it will
+  produce any output.
+\item
+  For example, if you misspell \VERB|\FunctionTok{\textbackslash{}emph}|
+  as \VERB|\FunctionTok{\textbackslash{}meph}|, \LaTeX~will stop with an
+  \texttt{undefined\ control\ sequence} error, because
+  \VERB|\FunctionTok{\textbackslash{}meph}| is not one of the commands
+  it knows.
+\end{itemize}
+
+\begin{block}{Advice on errors}
+
+\begin{enumerate}
+\item
+  Don't panic! Errors happen. The error messages can give a clue as to
+  what's wrong.
+\item
+  Fix them as soon as they arise--if what you just typed caused an
+  error, you can start your debugging there.
+\item
+  If there are multiple errors, start with the first one--the cause may
+  even be above it.
+\end{enumerate}
+
+\end{block}
+\end{frame}
+
+\begin{frame}{Exercise 1}
+\protect\hypertarget{exercise-1}{}
+Typeset the following
+paragraph\footnote{\url{http://en.wikipedia.org/wiki/Economy_of_the_United_States}}
+in \LaTeX :
+
+\begin{quote}
+In March 2006, Congress raised that ceiling an additional \$0.79
+trillion to \$8.97 trillion, which is approximately 68\% of GDP. As of
+October 4, 2008, the ``Emergency Economic Stabilization Act of 2008''
+raised the current debt ceiling to \$11.3 trillion.
+\end{quote}
+
+\begin{varblock}{Exercise 1}
+Click
+\hyperlink{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/01-getting_started/01-getting_started.tex&splash=none}{\beamerbutton{Exercise 1}}
+to open this exercise in \textbf{Overleaf}.
+
+\end{varblock}
+
+Watch out for
+
+\begin{itemize}
+\item
+  characters with special meanings \framebox{\texttt{\%}}
+  \framebox{\texttt{\#}} \framebox{\texttt{\&}} \framebox{\texttt{\$}}
+\item
+  typesetting quotation marks correctly.
+\end{itemize}
 \end{frame}
 
 \hypertarget{mathematics}{%
