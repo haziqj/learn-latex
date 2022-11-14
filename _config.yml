@@ -20,11 +20,11 @@ description: An interactive introduction to LaTeX
 #     android_theme: "#000" # this default to gradient_color
 #     link: "#1e6bb8" # this default to gradient_color
 #     section_title: "#155799" # this default to gradient_color
-# buttons:
-#       zip_url: http://example.com/
-#       zip_title: Title
-#       zip_hide: true
-#       tar_url: http://example.com/
-#       tar_title: Title
-#       tar_hide: true
-#       github_hide: true # hides "View on Github"
+buttons:
+      zip_url: http://example.com/
+      zip_title: PDF Slides
+      zip_hide: false
+      tar_url: http://example.com/
+      tar_title: Title
+      tar_hide: true
+      github_hide: true # hides "View on Github"
