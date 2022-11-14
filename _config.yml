@@ -1,6 +1,6 @@
 remote_theme: haziqj/cayman
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# plugins:
+# - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Quality Typography in Teaching Material
 description: An interactive introduction to LaTeX
 
