@@ -1,4 +1,4 @@
-# Quality Typography in Teaching Materials: An Interactive Introduction to LaTeX
+## Workshop
 
 - Date: Wednesday, 23 Nov 2022
 - Time: 2.00pm -- 4.00pm
