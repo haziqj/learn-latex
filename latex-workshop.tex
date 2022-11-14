@@ -436,931 +436,625 @@
   \end{frame}
 
 
-\hypertarget{hello-world}{%
-\section{Hello World}\label{hello-world}}
+\begin{frame}
+--\textgreater{}
 
-\begin{frame}{Why \LaTeX?}
-\protect\hypertarget{why}{}
-\begin{itemize}
-\item
-  It makes beautiful documents
-\item
-  Open source and active community. Lots of packages available.
-\item
-  Extensible document types (articles, presentation slides, books,
-  theses, exam papers, etc.)
-\end{itemize}
+--\textgreater{}
 
-\begin{alertblock}{Reminder}
-Sign up for Overleaf if you haven't done so!
+--\textgreater{}
 
-\end{alertblock}
-\end{frame}
-
-\begin{frame}[fragile]{How does it work?}
-\protect\hypertarget{how-does-it-work}{}
-\begin{itemize}
-\item
-  You write your document in \texttt{plain\ text} with commands that
-  describe its structure and meaning.
-\item
-  The \LaTeX program then processes your text and commands to produce a
-  beautifully formatted document.
-\end{itemize}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{The rain in Spain falls }\FunctionTok{\textbackslash{}emph}\NormalTok{\{mainly\} on the plain.}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{center}
-The rain in Spain falls \emph{mainly} on the plain.
-
-\end{center}
-\end{frame}
-
-\begin{frame}[fragile]{More examples of commands and output\ldots{}}
-\protect\hypertarget{more-examples-of-commands-and-output}{}
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{itemize}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}item}\NormalTok{ Tea}
-  \FunctionTok{\textbackslash{}item}\NormalTok{ Milk}
-  \FunctionTok{\textbackslash{}item}\NormalTok{ Biscuits}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{itemize}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\vspace{2em}
-
-\begin{itemize}
-\item Tea
-\item Milk
-\item Biscuits
-\end{itemize}
-\end{column}
-\end{columns}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
-  \BuiltInTok{\textbackslash{}includegraphics}\NormalTok{\{}\ExtensionTok{gerbil}\NormalTok{\}}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\begin{figure}
-\includegraphics{gerbil}
-\end{figure}
-\end{column}
-\end{columns}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
-\SpecialStringTok{y = }\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{ + }\SpecialCharTok{\textbackslash{}beta}\SpecialStringTok{ x}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\vspace{2.5em}
-
-\begin{equation}
-y = \alpha + \beta x
-\end{equation}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Attitude adjustment}
-\protect\hypertarget{attitude-adjustment}{}
-\begin{itemize}
-\item
-  Use commands to describe `what it is' and not `how it looks'
-\item
-  Focus on your content
-\item
-  Let \LaTeX~do its job
-\end{itemize}
-
-\vspace{0.5em}
-
-\begin{center}\includegraphics[width=1\linewidth]{figure/latexgraph-1} \end{center}
-\end{frame}
-
-\begin{frame}{Things that it solves: Picture alignment/placement}
-\protect\hypertarget{things-that-it-solves-picture-alignmentplacement}{}
-\LaTeX~takes care of figure placements automatically.
-
-\begin{columns}[T]
-\begin{column}{0.64\textwidth}
-\begin{center}\includegraphics[width=1\linewidth]{figure/piechart-1} \end{center}
-\end{column}
-
-\begin{column}{0.33\textwidth}
-\vspace{2em}
-
-\begin{figure}
-\frame{\includegraphics[width=\linewidth]{figure/tweet_msword.pdf}}
-\end{figure}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Things that it solves: References and bibliography}
-\protect\hypertarget{things-that-it-solves-references-and-bibliography}{}
-Sometimes, however, what others tell us is important as
-\emph{corroboration} of what we have already found out (or think we have
-found out) for ourselves. The Scottish philosopher Thomas Reid makes
-this point in connection with mathematical research in the belief that,
-if it applies to the science `in which, of all sciences, authoritiy is
-acknowledges to have least weight' \cite{reid2002thomas}, it will be
-even more significant in other areas of thought and practice\ldots{}
-Russell, as we shall see in a later chapter, considered this aspect of
-our reliance upon testimony essential to the understanding of what it is
-to be a physical thing and he criticized logical positivism for its
-failure to appreciate the implications of this point
-\cite{russell2007logic}. In the Analysis of Matter he says explicitly,
-`I mean here by ``objective'' not anything metaphysical but merely
-``agreeing with the testimony of others''' \cite{russell2015analysis}.
-
-\vspace{1em}
-
-Excerpt from \emph{Testimony: A Philosophical Study} by C. A. J. Coady
-(1992)
-\end{frame}
-
-\begin{frame}{References}
-\protect\hypertarget{references}{}
-\nocite{coady1992testimony} \printbibliography[heading=none]
-\end{frame}
-
-\begin{frame}{Things that it solves: Mathematical equations}
-\protect\hypertarget{things-that-it-solves-mathematical-equations}{}
-Typesetting mathematics and equation referencing.
-
-\vspace{1em}
-
-\hrule
-
-\vspace{0.5em}
-
-\begin{theorem}[Central Limit Theorem]
-\label{thm:clt} Let \(X_1,\dots,X_n\) be an independent random sample
-from a distribution whose mean is \(\mu\) and variance is \(\sigma^2\).
-Then \(\bar X_n := \frac{1}{n}\sum_{i=1}^n X_i\) converges in
-distribution to a random variable whose density function is
-\begin{equation}
-\label{eq:clt}
-f(x) = \frac{1}{\sqrt{2\pi}} \exp\left[ -\frac{1}{2}\left(\frac{x - \mu}{\sigma/\sqrt n} \right)^2 \right]
-\end{equation}
-\end{theorem}
-
-The proof of Theorem \ref{thm:clt} uses \emph{charactertistic
-functions}, whereby the standardised version of \eqref{eq:clt} is
-obtained in the limit.
-\end{frame}
-
-\begin{frame}{A chemistry example}
-\protect\hypertarget{a-chemistry-example}{}
-\begin{figure}
-    \centering
-    \small
-    \schemestart
-        \chemname{
-            \chemfig{
-                CH
-                (-[:90]CH_2-OOC-R_1)
-                (-[:-90]CH_2-OOC-R_3)
-                -OOC-R_2
-            }
-        }{Triglyceride}
-        \+
-        \chemname{
-                \chemfig{
-                    3 ROH
-                }
-            }{Alcohol}
-        \arrow(.mid east--.mid west){<=>[Catalyst]}
-        \chemname{
-            \chemfig{
-                R_2
-                (-[:90,,,,draw=none]R_1-COO-R)
-                (-[:-90,,,,draw=none]R_3-COO-R)
-                -COO-R
-            }
-        }{Alkyl esters}
-        \+
-        \chemname{
-            \chemfig{
-                CH
-                (-[:90]CH_2-OH)
-                (-[:-90]CH_2-OH)
-                -OH
-            }
-        }{Glycerol}
-    \schemestop
-    \caption{Transesterification of triglyceride with alcohol.}
-    \label{scm:tsester}
-\end{figure}
-
-\blfootnote{Figure \ref{scm:tsester} obtained from \url{https://tex.stackexchange.com/a/472486}}
-\end{frame}
-
-\begin{frame}{Languages}
-\protect\hypertarget{languages}{}
-\vspace{-2em}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\begin{center}\includegraphics[width=0.4\linewidth]{figure/00-aljabr} \end{center}
-
-\textarabic{
-الْكِتَابْ الْمُخْتَصَرْ فِيْ حِسَابْ الْجَبْرْ وَالْمُقَابَلَة
-} (The Compendious Book on Calculation by Completion and Balancing),
-also known as \textarabic{الجبر} (Al-Jabr), written by \textarabic{
-محمد بن موسى الخوارزميّ
-} (Muḥammad ibn Mūsā al-Khwārizmī) around 820 CE.
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\begin{center}\includegraphics[width=0.4\linewidth]{figure/00-haidaosuanjing} \end{center}
-
-海岛算经 (Hǎidǎo suàn jīng--The Sea Island Mathematical Manual) was
-written by 刘徽 (Liú Huī) ca. 200 CE. The Chinese were aware of a good
-approximation of \(\pi\approx\) \(355/113\) \(= 3.1415929204\) very
-early on (祖冲之 Zǔ Chōng Zhī, 500 CE).
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{For teaching}
-\protect\hypertarget{for-teaching}{}
-\begin{itemize}
-\tightlist
-\item
-  Setting of question papers (assignments, tests, exams, etc.)
-\item
-  Syllabus documents
-\item
-  Presentations
-\end{itemize}
-\end{frame}
-
-\hypertarget{getting-started}{%
-\section{Getting started}\label{getting-started}}
-
-\begin{frame}[fragile]{Getting started}
-\protect\hypertarget{getting-started-1}{}
-\framesubtitle{A minimal \LaTeX\ document}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Hello, World!  }\CommentTok{\% your content goes here...}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{itemize}
-\item
-  Commands start with a backslash \texttt{\textbackslash{}}
-\item
-  Every document starts with a \texttt{\textbackslash{}documentclass}
-  command
-\item
-  The \emph{argument} in curly braces \texttt{\{} \texttt{\}} tells
-  \LaTeX~what kind of document we are creating (in this case, an
-  \texttt{article})
-\item
-  A percent sign \texttt{\%} starts a \emph{comment}--\LaTeX~will ignore
-  the rest of the line
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Getting started}
-\protect\hypertarget{getting-started-2}{}
-\begin{center}\includegraphics[width=0.5\linewidth]{figure/overleaf} \end{center}
-
-\begin{center}
-\url{https://www.overleaf.com/}
-
-\end{center}
-
-\begin{itemize}
-\item
-  Overleaf is a website for writing documents in \LaTeX.
-\item
-  It `compiles' your \LaTeX~document online to show you the results.
-\item
-  As we go through the following slides, try out the examples by typing
-  them into the example document on Overleaf!
-\end{itemize}
-
-\begin{varblock}{Exercise (Hello world)}
-Click
-\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/00-hello_world/00-hello_world.tex&splash=none}{\beamerbutton{Hello World}}
-to open the ``Hello world'' document in \textbf{Overleaf} (you'll need
-to sign in first). Let's get started!
-
-\end{varblock}
-\end{frame}
-
-\begin{frame}[fragile]{Typesetting text}
-\protect\hypertarget{typesetting-text}{}
-\begin{itemize}
-\item
-  Type your text between
-  \VERB|\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}|
-  and
-  \VERB|\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}|.
-\item
-  For the most part, you can just type your text normally.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{Words are separated by one }
-\NormalTok{or more spaces.}
-
-\NormalTok{Paragraphs are separated by }
-\NormalTok{one or more blank lines.}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-Words are separated by one or more spaces.
-
-~
-
-Paragraphs are separated by one or more blank lines.
-\end{column}
-\end{columns}
-
-\vspace{0.5em}
-
-\begin{itemize}
-\tightlist
-\item
-  Blank space in the source file is collaped in the output.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{The      rain    in   Spain}
-\NormalTok{falls mainly on the   plain.}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-The rain in Spain falls mainly on the plain.
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Typesetting text (Caveats)}
-\protect\hypertarget{typesetting-text-caveats}{}
-\begin{itemize}
-\tightlist
-\item
-  Quotation marks a bit tricky: Use a backtick \framebox{\texttt{`}} on
-  the left and an apostrophe \framebox{\texttt{'}} on the right.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{Single quotes: \textasciigrave{}text\textquotesingle{}.}
-
-\NormalTok{Double quotes: \textasciigrave{}\textasciigrave{}text\textquotesingle{}\textquotesingle{}.}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-Single quotes: `text'.
-
-~
-
-Double quotes: ``text''.
-\end{column}
-\end{columns}
-
-\vspace{0.5em}
-
-\begin{itemize}
-\item
-  Some common characters have special meanings in \LaTeX :
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \framebox{\texttt{\%}} is used to comment text
-  \item
-    \framebox{\texttt{\#}} is used for macros definitions
-  \item
-    \framebox{\texttt{\&}} is used for alignment
-  \item
-    \framebox{\texttt{\$}} is used for maths
-  \end{itemize}
-\item
-  If you just type these, you'll get an error. If you want one to appear
-  in the output, you have to \emph{escape} it by preceding it with a
-  backslash \framebox{\texttt{\textbackslash}}.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{\textbackslash{}$} \FunctionTok{\textbackslash{}\%} \FunctionTok{\textbackslash{}\&} \FunctionTok{\textbackslash{}\#} 
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\$ \% \& \#
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Handling errors}
-\protect\hypertarget{handling-errors}{}
-\begin{itemize}
-\item
-  \LaTeX~can get confused when it is trying to compile your document. If
-  it does, it stops with an error, which you must fix before it will
-  produce any output.
-\item
-  For example, if you misspell \VERB|\FunctionTok{\textbackslash{}emph}|
-  as \VERB|\FunctionTok{\textbackslash{}meph}|, \LaTeX~will stop with an
-  \texttt{undefined\ control\ sequence} error, because
-  \VERB|\FunctionTok{\textbackslash{}meph}| is not one of the commands
-  it knows.
-\end{itemize}
-
-\begin{block}{Advice on errors}
-
-\begin{enumerate}
-\item
-  Don't panic! Errors happen. The error messages can give a clue as to
-  what's wrong.
-\item
-  Fix them as soon as they arise--if what you just typed caused an
-  error, you can start your debugging there.
-\item
-  If there are multiple errors, start with the first one--the cause may
-  even be above it.
-\end{enumerate}
-
-\end{block}
-\end{frame}
-
-\begin{frame}{Exercise 1}
-\protect\hypertarget{exercise-1}{}
-Typeset the following
-paragraph\footnote{\url{http://en.wikipedia.org/wiki/Economy_of_the_United_States}}
-in \LaTeX :
-
-\begin{quote}
-In March 2006, Congress raised that ceiling an additional \$0.79
-trillion to \$8.97 trillion, which is approximately 68\% of GDP. As of
-October 4, 2008, the ``Emergency Economic Stabilization Act of 2008''
-raised the current debt ceiling to \$11.3 trillion.
-\end{quote}
-
-\begin{varblock}{Exercise 1}
-Click
-\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/01-getting_started/01-getting_started.tex&splash=none}{\beamerbutton{Exercise 1}}
-to open this exercise in \textbf{Overleaf}.
-
-\end{varblock}
-
-Watch out for
-
-\begin{itemize}
-\item
-  characters with special meanings \framebox{\texttt{\%}}
-  \framebox{\texttt{\#}} \framebox{\texttt{\&}} \framebox{\texttt{\$}}
-\item
-  typesetting quotation marks correctly.
-\end{itemize}
-\end{frame}
-
-\hypertarget{mathematics}{%
-\section{Mathematics}\label{mathematics}}
-
-\hypertarget{inline-equations}{%
-\subsection{Inline equations}\label{inline-equations}}
-
-\begin{frame}[fragile]{Inline equations}
-\begin{itemize}
-\tightlist
-\item
-  Dollar signs \framebox{\texttt{\$}} are used to mark mathematics in
-  text.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\% not so good:}
-\NormalTok{Let a and b be distinct positive}
-\NormalTok{integers, and let c = a {-} b + 1.}
-
-\CommentTok{\% much better:}
-\NormalTok{Let }\SpecialStringTok{$a$}\NormalTok{ and }\SpecialStringTok{$b$}\NormalTok{ be distinct }
-\NormalTok{positive integers, and let }
-\SpecialStringTok{$c = a {-} b + 1$}\NormalTok{.}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-\vspace{1em}
-
-Let a and b be distinct positive integers, and let c = a - b + 1.
-
-\hfill\break
-
-Let \(a\) and \(b\) be distinct positive integers, and let
-\(c = a - b + 1\).
-\end{column}
-\end{columns}
-
-\vspace{0.5em}
-
-\begin{itemize}
-\item
-  Always use dollar signs in pairs--one to \textbf{begin} and one to
-  \textbf{end}.
-\item
-  \LaTeX~handles spacing automatically; it ignores your spaces.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.48\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{Let }\SpecialStringTok{$y=mx+c$}\NormalTok{ be }\FunctionTok{\textbackslash{}ldots}
-
-\NormalTok{Let }\SpecialStringTok{$y = m x + c$}\NormalTok{ be }\FunctionTok{\textbackslash{}ldots}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.48\textwidth}
-Let \(y=mx+c\) be \ldots
-
-\vspace{1em}
-
-Let \(y = m x + c\) be \ldots
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{More notation}
-\protect\hypertarget{more-notation}{}
-\begin{itemize}
-\tightlist
-\item
-  Use caret/hat \framebox{\ \texttt{\^}} for superscripts and underscore
-  \framebox{$\vphantom{a}$\texttt{\_}} for subscripts.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialStringTok{$y = c\_2 x\^{}2 + c\_1 x + c\_0$}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.38\textwidth}
-\(y = c_2 x^2 + c_1 x + c_0\)
-\end{column}
-\end{columns}
-
-\vspace{0.5em}
-
-\begin{itemize}
-\tightlist
-\item
-  Use curly braces \framebox{\texttt{\{}} \framebox{\texttt{\}}} to
-  group supers/sub scripts.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\% oops!}
-\SpecialStringTok{$F\_n = F\_n{-}1 + F\_n{-}2$} 
-
-\CommentTok{\% ok!}
-\SpecialStringTok{$F\_n = F\_\{n{-}1\} + F\_\{n{-}2\}$}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.38\textwidth}
-\vspace{1em}
-
-\(F_n = F_n-1 + F_n-2\)
-
-\vspace{2em}
-
-\(F_n = F_{n-1} + F_{n-2}\)
-\end{column}
-\end{columns}
-
-\vspace{0.5em}
-
-\begin{itemize}
-\tightlist
-\item
-  There are commands for Greek letters and common notation.
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}mu}\SpecialStringTok{ = A e\^{}\{Q/RT\}$}
-
-\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}Omega}\SpecialStringTok{ = }\SpecialCharTok{\textbackslash{}sum}\SpecialStringTok{\_\{k=1\}\^{}\{n\} }\SpecialCharTok{\textbackslash{}omega}\SpecialStringTok{\_k$}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.38\textwidth}
-\(\mu = A e^{Q/RT}\)
-
-\vspace{1em}
-
-\(\Omega = \sum_{k=1}^{n} \omega_k\)
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Detexify}
-\protect\hypertarget{detexify}{}
-\centering
-\vspace{-0.5em}
-
-\href{https://detexify.kirelabs.org/classify.html}{\includegraphics{figure/detexify.png}}
-\end{frame}
-
-\hypertarget{displayed-equations}{%
-\subsection{Displayed equations}\label{displayed-equations}}
-
-\begin{frame}[fragile]{Displayed equations}
-\begin{itemize}
-\tightlist
-\item
-  If the mathematics is big and scary, \emph{display} it on its own line
-  using
-  \VERB|\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}|
-  and
-  \VERB|\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}|
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{The roots of a quadratic equation are }
-\NormalTok{given by}
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
-\SpecialStringTok{x = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{{-}b }\SpecialCharTok{\textbackslash{}pm}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}sqrt}\SpecialStringTok{\{b\^{}2 {-} 4ac\}\}}
-\SpecialStringTok{         \{2a\} }
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
-\NormalTok{where }\SpecialStringTok{$a$}\NormalTok{, }\SpecialStringTok{$b$}\NormalTok{ and }\SpecialStringTok{$c$}\NormalTok{ are }\FunctionTok{\textbackslash{}ldots}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.38\textwidth}
-The roots of a quadratic equation are given by \begin{equation}
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}
-{2a} \end{equation} where \(a\), \(b\) and \(c\) are \ldots
-\end{column}
-\end{columns}
-
-\vspace{0.5em}
-
-\begin{alertblock}{Caution}
-\LaTeX~ mostly ignores your spaces in mathematics, but it can't handle
-blank lines in equations--don't put blank lines in your mathematics.
-
-\end{alertblock}
-\end{frame}
-
-\hypertarget{interlude-environments}{%
-\subsection{Interlude: Environments}\label{interlude-environments}}
-
-\begin{frame}[fragile]{Interlude: Environments}
-\begin{itemize}
-\item
-  \texttt{equation} is an \emph{environment} (a context).
-\item
-  The \VERB|\KeywordTok{\textbackslash{}begin}| and
-  \VERB|\KeywordTok{\textbackslash{}end}| commands are used to create
-  many different environments. E.g., \texttt{itemize} and
-  \texttt{enumerate} for lists:
-\end{itemize}
-
-\begin{columns}[T]
-\begin{column}{0.58\textwidth}
-\small
-\vspace{-1em}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{itemize}\NormalTok{\} }\CommentTok{\% for bullet points }
-\FunctionTok{\textbackslash{}item}\NormalTok{ Biscuits}
-\FunctionTok{\textbackslash{}item}\NormalTok{ Tea}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{itemize}\NormalTok{\}}
-
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{enumerate}\NormalTok{\} }\CommentTok{\% for numbers }
-\FunctionTok{\textbackslash{}item}\NormalTok{ Biscuits}
-\FunctionTok{\textbackslash{}item}\NormalTok{ Tea}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{enumerate}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{column}
-
-\begin{column}{0.38\textwidth}
-\vspace{1em}
-
-\begin{itemize}
-\tightlist
-\item
-  Biscuits
-\item
-  Tea
-\end{itemize}
-
-\vspace{2em}
-
-\begin{enumerate}
-\tightlist
-\item
-  Biscuits
-\item
-  Tea
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\hypertarget{interlude-packages}{%
-\subsection{Interlude: Packages}\label{interlude-packages}}
-
-\begin{frame}[fragile]{Interlude: Packages}
-\begin{itemize}
-\item
-  All of the commands and environments we've used so far are built into
-  \LaTeX .
-\item
-  \emph{Packages} are libraries of extra commands and evironments. There
-  are thousands of freely available packages.
-\item
-  We have to load each package we want to use with a
-  \VERB|\BuiltInTok{\textbackslash{}usepackage}| commands in the
-  \emph{preamble}.
-\item
-  Example: \texttt{amsmath} from the American Mathematical Society.
-\end{itemize}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
-\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{amsmath}\NormalTok{\} }\CommentTok{\% preamble }
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\CommentTok{\% now we can use commands from amsmath here... }
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-\end{frame}
-
-\begin{frame}[fragile]{An example with \texttt{amsmath}}
-\protect\hypertarget{an-example-with-amsmath}{}
-\begin{itemize}
-\tightlist
-\item
-  Align a sequence of equations at the equals sign \begin{align*}
-  (x+1)^3 &= (x+1)(x+1)(x+1) \\
-  &= (x+1)(x^2 + 2x + 1) \\
-  &= x^3 + 3x^2 + 3x + 1 
-  \end{align*} with the \texttt{align*} environment.
-\end{itemize}
-
-\small
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{align*}\NormalTok{\}}
-\SpecialStringTok{(x+1)\^{}3 \&= (x+1)(x+1)(x+1) }\SpecialCharTok{\textbackslash{}\textbackslash{}}
-\SpecialStringTok{\&= (x+1)(x\^{}2 + 2x + 1) }\SpecialCharTok{\textbackslash{}\textbackslash{}}
-\SpecialStringTok{\&= x\^{}3 + 3x\^{}2 + 3x + 1 }
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{align*}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\normalsize
-
-\begin{itemize}
-\item
-  An ampersand \framebox{\texttt{\&}} separates the left column (before
-  the \(=\)) from the right column (after the \(=\)).
-\item
-  A double backslash \framebox{\texttt{\textbackslash\textbackslash}}
-  starts a new line.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Exercise 2}
-\protect\hypertarget{exercise-2}{}
-\begin{varblock}{Exercise 2}
-Typeset the following paragraph in \LaTeX :
-
-\begin{quote}
-Let \(X_1, X_2, \ldots, X_n\) be a sequence of independent and
-identically distributed random variables with
-\(\operatorname{E}[X_i] = \mu\) and
-\(\operatorname{Var}[X_i] = \sigma^2 < \infty\), and let
-\begin{equation*}
-S_n = \frac{1}{n}\sum_{i=1}^{n} X_i
-\end{equation*} denote their mean. Then as \(n\) approaches infinity,
-the random variables \(\sqrt{n}(S_n - \mu)\) converge in distribution to
-a normal \(N(0, \sigma^2)\).
-\end{quote}
-
-Click
-\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/02-mathematics/02-mathematics.tex&splash=none}{\beamerbutton{Exercise 2}}
-to open this exercise in \textbf{Overleaf}.
-
-\end{varblock}
+--\textgreater{} --\textgreater{} --\textgreater{}
 \end{frame}
 
 \hypertarget{figures}{%
 \section{Figures}\label{figures}}
 
+\begin{frame}[fragile]{Figures}
+\begin{itemize}
+\item
+  Requires the \texttt{graphicx} package, which provides the
+  \VERB|\BuiltInTok{\textbackslash{}includegraphics}| command.
+\item
+  Supported graphics formats include JPEG, PNG and PDF.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.68\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}includegraphics}\NormalTok{[width=0.5}\FunctionTok{\textbackslash{}textwidth}\NormalTok{]\{}\ExtensionTok{gerbil}\NormalTok{\}}
+
+
+
+
+
+\BuiltInTok{\textbackslash{}includegraphics}\NormalTok{[width=0.3}\FunctionTok{\textbackslash{}textwidth}\NormalTok{,}
+\NormalTok{                 angle=270]\{}\ExtensionTok{gerbil}\NormalTok{\}}
+                 
+                 
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.28\textwidth}
+\includegraphics[width=\textwidth]{figure/gerbil}
+
+\includegraphics[width=0.5\textwidth,angle=270]{figure/gerbil}
+\end{column}
+\end{columns}
+\end{frame}
+
+\hypertarget{interlude-optional-arguments}{%
+\subsection{Interlude: Optional
+arguments}\label{interlude-optional-arguments}}
+
+\begin{frame}[fragile]{Interlude: Optional arguments}
+\begin{itemize}
+\item
+  We use square brackets \framebox{\texttt{[}} \framebox{\texttt{]}} for
+  \emph{optional} arguments, instead of braces \framebox{\texttt{\{}}
+  \framebox{\texttt{\}}}.
+\item
+  \VERB|\BuiltInTok{\textbackslash{}includegraphics}| accepts optional
+  arguments that allow you to transform the image when it is included.
+  For example,
+  \VERB|\NormalTok{width=0.3}\FunctionTok{\textbackslash{}textwidth}|
+  makes the image take up 30\% of the width of the surrounding text
+  (\VERB|\FunctionTok{\textbackslash{}textwidth}|).
+\item
+  \VERB|\BuiltInTok{\textbackslash{}documentclass}| accepts optional
+  arguments, too. E.g.
+  \VERB|\BuiltInTok{\textbackslash{}documentclass}\NormalTok{[12pt,twocolumn]\{}\ExtensionTok{article}\NormalTok{\}}|
+  makes the text bigger (12pt) and puts it into two columns.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Floats}
+\protect\hypertarget{floats}{}
+\begin{itemize}
+\item
+  Allow \LaTeX~to decide where the figure will go (it can ``float'').
+\item
+  You can also give the figure a caption, which can be referenced with
+  \VERB|\KeywordTok{\textbackslash{}ref}|.
+\item
+  For more on floats, visit
+  \href{https://www.overleaf.com/learn/latex/Positioning_images_and_tables}{this
+  link}.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.6\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}[htbp]}
+\FunctionTok{\textbackslash{}centering} 
+\BuiltInTok{\textbackslash{}includegraphics}\NormalTok{[}\CommentTok{\%}
+\NormalTok{width=0.5}\FunctionTok{\textbackslash{}textwidth}\NormalTok{]\{}\ExtensionTok{gerbil}\NormalTok{\} }
+\FunctionTok{\textbackslash{}caption}\NormalTok{\{}\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{fig:gerbil}\NormalTok{\}Aww}\FunctionTok{\textbackslash{}ldots}\NormalTok{.\} }
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
+
+\NormalTok{Figure }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{fig:gerbil}\NormalTok{\} shows a gerbil.}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.36\textwidth}
+\vspace{-1em}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/gerbil} 
+
+}
+
+\caption{Aww\ldots}\label{fig:gerbilcap}
+\end{figure}
+
+\vspace{-0.5em}
+
+Figure \ref{fig:gerbilcap} shows a gerbil.
+\end{column}
+\end{columns}
+\end{frame}
+
+\hypertarget{interlude-tables}{%
+\subsection{Interlude: Tables}\label{interlude-tables}}
+
+\begin{frame}[fragile]{Interlude: Tables}
+\begin{itemize}
+\tightlist
+\item
+  Use the \texttt{tabular} environment wrapped in the \texttt{table}
+  environment tht floats it. You can also
+  \texttt{\textbackslash{}caption} and \texttt{\textbackslash{}label} to
+  \texttt{\textbackslash{}ref} it later.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\footnotesize
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{table}\NormalTok{\}[htbp]}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tabular}\NormalTok{\}\{|l|l|l|\}}
+\FunctionTok{\textbackslash{}hline}
+\NormalTok{Item   }\OperatorTok{\&}\NormalTok{ Qty }\OperatorTok{\&}\NormalTok{ Unit (}\FunctionTok{\textbackslash{}$}\NormalTok{) }\FunctionTok{\textbackslash{}\textbackslash{}} \FunctionTok{\textbackslash{}hline}
+\NormalTok{Widget }\OperatorTok{\&}\NormalTok{ 1   }\OperatorTok{\&}\NormalTok{ 199.99    }\FunctionTok{\textbackslash{}\textbackslash{}} \FunctionTok{\textbackslash{}hline}
+\NormalTok{Gadget }\OperatorTok{\&}\NormalTok{ 2   }\OperatorTok{\&}\NormalTok{ 399.99    }\FunctionTok{\textbackslash{}\textbackslash{}} \FunctionTok{\textbackslash{}hline}
+\NormalTok{Cable  }\OperatorTok{\&}\NormalTok{ 3   }\OperatorTok{\&}\NormalTok{ 19.99     }\FunctionTok{\textbackslash{}\textbackslash{}} \FunctionTok{\textbackslash{}hline}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tabular}\NormalTok{\}}
+\FunctionTok{\textbackslash{}caption}\NormalTok{\{My table\}}
+\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{tab:mytab}\NormalTok{\}}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{table}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\begin{table}[htbp]
+\begin{tabular}{|l|c|r|}
+\hline
+Item   & Qty & Unit (\$) \\ \hline
+Widget & 1   & 199.99    \\ \hline
+Gadget & 2   & 399.99    \\ \hline
+Cable  & 3   & 19.99     \\ \hline
+\end{tabular}
+\caption{My table}
+\label{tab:mytab}
+\end{table}
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\item
+  The argument specifies column alignment--\textbf{l}eft,
+  \textbf{c}entre, \textbf{r}ight.
+\item
+  \VERB|\FunctionTok{\textbackslash{}hline}| and \framebox{\texttt{|}}
+  specifies horizontal and vertical lines resp.
+\item
+  Use \framebox{\texttt{\&}} to separate columns and
+  \framebox{\texttt{\textbackslash\textbackslash}} to start new line.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Exercise}
+\protect\hypertarget{exercise}{}
+\begin{varblock}{Exercise 3 (Figures)}
+Let's practice adding a picture using
+\VERB|\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}...}\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}|
+and \VERB|\BuiltInTok{\textbackslash{}includegraphics}|. Download the
+following image by clicking on it.
+
+\href{https://github.com/haziqj/learn-latex/raw/main/figure/gerbil.jpg}{%
+\begin{center}
+\includegraphics[height=10cm]{figure/gerbil.jpg}
+\end{center}
+}
+
+Click
+\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/03-figures/03-figures.tex&splash=none}{\beamerbutton{Exercise 3}}
+to open this exercise in \textbf{Overleaf}.
+
+\end{varblock}
+\end{frame}
+
 \hypertarget{structure}{%
 \section{Structure}\label{structure}}
 
+\begin{frame}[fragile]{Title, author, date}
+\protect\hypertarget{title-author-date}{}
+\begin{itemize}
+\item
+  Tell \LaTeX~the \VERB|\FunctionTok{\textbackslash{}title}| and
+  \VERB|\FunctionTok{\textbackslash{}author}| names in the preamble.
+  Note that author names are separated by
+  \VERB|\FunctionTok{\textbackslash{}and}|.
+\item
+  The \texttt{\textbackslash{}date} command can be used to manually
+  specify the date, or use
+  \VERB|\FunctionTok{\textbackslash{}date}\NormalTok{\{}\FunctionTok{\textbackslash{}today}\NormalTok{\}}|
+  for today's date.
+\item
+  Then use \VERB|\FunctionTok{\textbackslash{}maketitle}| (inserted just
+  after
+  \VERB|\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}|)
+  to actually create the title.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
+
+\FunctionTok{\textbackslash{}title}\NormalTok{\{The Title\}}
+\FunctionTok{\textbackslash{}author}\NormalTok{\{A. Author }\FunctionTok{\textbackslash{}and}\NormalTok{ A. Nother\}}
+\FunctionTok{\textbackslash{}date}\NormalTok{\{}\FunctionTok{\textbackslash{}today}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\} }
+\FunctionTok{\textbackslash{}maketitle}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{center}\includegraphics[width=1\linewidth]{figure/maketitle} \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Abstract}
+\protect\hypertarget{abstract}{}
+\begin{itemize}
+\item
+  Typically, a paper begins with the abstract.
+\item
+  Use the \texttt{abstract} environment for this.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{lipsum}\NormalTok{\}}
+\FunctionTok{\textbackslash{}title}\NormalTok{\{The Title\}}
+\FunctionTok{\textbackslash{}author}\NormalTok{\{A. Author }\FunctionTok{\textbackslash{}and}\NormalTok{ A. Nother\}}
+\FunctionTok{\textbackslash{}date}\NormalTok{\{}\FunctionTok{\textbackslash{}today}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\} }
+\FunctionTok{\textbackslash{}maketitle}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{abstract}\NormalTok{\}}
+\FunctionTok{\textbackslash{}lipsum}\NormalTok{[1]}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{abstract}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{center}\includegraphics[width=1\linewidth]{figure/abstract} \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Sections}
+\protect\hypertarget{sections}{}
+\begin{itemize}
+\tightlist
+\item
+  To section the document, use
+  \VERB|\KeywordTok{\textbackslash{}section}| and
+  \VERB|\KeywordTok{\textbackslash{}subsection}|.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\} }
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Introduction\}}
+\NormalTok{The problem of }\FunctionTok{\textbackslash{}ldots} 
+
+\KeywordTok{\textbackslash{}subsection}\NormalTok{\{Sample Preparation\} }
+
+\KeywordTok{\textbackslash{}subsection}\NormalTok{\{Data Collection\}}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Results\}}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Conclusion\}}
+
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{center}\includegraphics[width=1\linewidth]{figure/sections} \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Cross-referencing}
+\protect\hypertarget{cross-referencing}{}
+\begin{itemize}
+\tightlist
+\item
+  As with equations, figures and tables, it is possible to
+  cross-reference the sections. Just use
+  \VERB|\KeywordTok{\textbackslash{}label}| and
+  \VERB|\KeywordTok{\textbackslash{}ref}|.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\footnotesize
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\} }
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Introduction\}}
+\NormalTok{Results are presented in section }
+\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{sec:results}\NormalTok{\}.}
+\NormalTok{In section }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{sec:conc}\NormalTok{\}, we conclude.}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Results\}}
+\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{sec:results}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Conclusion\}}
+\KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{sec:conc}\NormalTok{\}}
+
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{center}\includegraphics[width=1\linewidth]{figure/crossref} \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Exercise}
+\protect\hypertarget{exercise-1}{}
+\begin{varblock}{Exercise 4 (Structure)}
+The document you will load contains all the text, but its structure is
+missing. Go ahead and fix this:
+
+\begin{itemize}
+\tightlist
+\item
+  Add title, author and date.
+\item
+  Add the abstract.
+\item
+  Add sections.
+\item
+  Cross reference the sections.
+\end{itemize}
+
+\vspace{1em}
+
+Click
+\href{https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/04-article/04-article.tex&splash=none}{\beamerbutton{Exercise 4}}
+to open this exercise in \textbf{Overleaf}.
+
+\end{varblock}
+\end{frame}
+
 \hypertarget{bibliography}{%
 \section{Bibliography}\label{bibliography}}
+
+\begin{frame}[fragile]{The bibtex format}
+\protect\hypertarget{the-bibtex-format}{}
+\begin{itemize}
+\tightlist
+\item
+  \LaTeX~works off a `bibtex' database format:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{@article\{lowry1951protein,}
+\NormalTok{  title=\{Protein measurement with the Folin phenol reagent\},}
+\NormalTok{  author=\{Lowry, OH and Rosebrough, NJ and Farr, AL and }
+\NormalTok{          Randall, RJ\},}
+\NormalTok{  journal=\{Journal of Biological Chemistry\},}
+\NormalTok{  volume=\{193\},}
+\NormalTok{  pages=\{265{-}{-}275\},}
+\NormalTok{  year=\{1951\}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\item
+  Each bibtex entry has a \emph{key} that you can use to reference it in
+  the document. E.g., \texttt{lowry1951protein} is the key for the
+  article above.
+\item
+  It's a good idea to use a key based on the name, year and title.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{A bib file}
+\protect\hypertarget{a-bib-file}{}
+\begin{itemize}
+\item
+  Collect all your references into a bib file, say \texttt{refs.bib}.
+  This file should be in the folder together with your tex file.
+\item
+  Most reference managers (e.g.~Mendeley or Zotero) can export to bibtex
+  format.
+\item
+  You can also use Google Scholar and do this manually.
+\end{itemize}
+
+\begin{center}\includegraphics[width=0.72\linewidth]{figure/googlescholar} \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Bib\LaTeX}
+\protect\hypertarget{bib}{}
+\begin{itemize}
+\item
+  Use the \texttt{biblatex} package with the \texttt{natbib} option.
+\item
+  The bibliography file must be called using
+  \VERB|\FunctionTok{\textbackslash{}addbibresource}|.
+\item
+  At the end, print the bibliography using
+  \VERB|\FunctionTok{\textbackslash{}printbibliography}|
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\} }
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{[natbib]\{}\ExtensionTok{biblatex}\NormalTok{\} }
+\FunctionTok{\textbackslash{}addbibresource}\NormalTok{\{refs.bib\}}
+\CommentTok{\% if \textquotesingle{}refs\textquotesingle{} is the name of }
+\CommentTok{\% the bib file}
+
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\NormalTok{The most cited paper ever is }
+\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{lowry1951protein}\NormalTok{\}.}
+
+\FunctionTok{\textbackslash{}printbibliography}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{center}\includegraphics[width=1\linewidth]{figure/biblatex1} \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Citation styles}
+\protect\hypertarget{citation-styles}{}
+\begin{itemize}
+\tightlist
+\item
+  Use the optional argument \texttt{style} to change the citation style.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{...}
+
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{[natbib,stype=apa]}
+\NormalTok{  \{}\ExtensionTok{biblatex}\NormalTok{\} }
+
+\NormalTok{...}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\vspace{-1em}
+
+\begin{center}\includegraphics[width=1\linewidth]{figure/biblatex2} \end{center}
+\end{column}
+\end{columns}
+
+\vspace{0.5em}
+
+\begin{itemize}
+\item
+  A number of citation styles exist:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{numeric}: (default) Numeric citation scheme
+  \item
+    \texttt{apa}: American Psychological Association
+  \item
+    \texttt{ieee}: Institute of Electrical and Electronics Engineers
+  \item
+    \texttt{chicago}: Chicago style
+  \item
+    \texttt{mla}: Modern Language Association
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Some \texttt{natbib} commands}
+\protect\hypertarget{some-natbib-commands}{}
+\begin{itemize}
+\tightlist
+\item
+  The \texttt{natbib} option allows several alternative citation
+  commands, especially using some kind of author-year style such as the
+  APA style.
+\end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% Textual citation}
+\KeywordTok{\textbackslash{}citet}\NormalTok{\{}\ExtensionTok{lowry1951protein}\NormalTok{\}    }
+
+\CommentTok{\% Textual citation, all authors}
+\FunctionTok{\textbackslash{}citet*}\NormalTok{\{lowry1951protein\}   }
+
+\CommentTok{\% Parenthetical citation}
+\KeywordTok{\textbackslash{}citep}\NormalTok{\{}\ExtensionTok{lowry1951protein}\NormalTok{\}    }
+
+\CommentTok{\% Prints only the author name}
+\KeywordTok{\textbackslash{}citeauthor}\NormalTok{\{}\ExtensionTok{lowry1951protein}\NormalTok{\}   }
+
+\CommentTok{\% Prints only the year }
+\KeywordTok{\textbackslash{}citeyear}\NormalTok{\{}\ExtensionTok{lowry1951protein}\NormalTok{\} }
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{center}\includegraphics[width=1\linewidth]{figure/natbib} \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Exercise}
+\protect\hypertarget{exercise-2}{}
+\begin{varblock}{Exercise 5 (Bibliography)}
+
+We will add citations to the previous document. To get started, download
+the zip file which contains all the files you need by clicking
+\href{https://github.com/haziqj/learn-latex/raw/main/exercises/05-bibliography.zip}{\beamerbutton{Exercise 5}}.
+\textbf{Do not unzip the zip file.} Instead, upload it to Overleaf.
+
+\vspace{-0.5em}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{figure/upload1} \end{center}
+
+\vspace{-1.5em}
+
+\end{varblock}
+\end{frame}
 
 \hypertarget{whats-next}{%
 \section{What's next?}\label{whats-next}}
