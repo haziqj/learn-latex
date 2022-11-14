@@ -4,3 +4,4 @@
 .texpadtmp
 *.log
 .Rproj.user
+.Rhistory
