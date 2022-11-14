@@ -10,9 +10,21 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 ## Exercises
 
+1. Typesetting a simple paragraph: [link](https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/01-getting_started/01-getting_started.tex&splash=none)
 
+2. Learn to typeset a mathematical equation: [link](https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/02-mathematics/02-mathematics.tex&splash=none)
+
+3. Adding figures to a document: [link](https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/03-figures/03-figures.tex&splash=none)
+
+4. Structuring an article document: [link](https://www.overleaf.com/docs?snip_uri=https://raw.github.com//haziqj/learn-latex/main/exercises/04-article/04-article.tex&splash=none)
+
+5. Automatic bibliography: [zip](https://github.com/haziqj/learn-latex/raw/main/exercises/05-bibliography.zip) -- to be uploaded to Overleaf as a new project
 
 ## Showcase
 
+- Beamer UBD
 
+- Exams class
+
+- Syllabus document
 
