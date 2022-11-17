@@ -63,12 +63,11 @@ The workshop slides was created using this theme.
 Using the [`exams`](https://www.overleaf.com/learn/latex/Typesetting_exams_in_LaTeX) class, we can typeset exam questions and solutions in a single latex file. 
 Then, using the `answers` toggle as an option, we can either typeset the exam paper only, or print out the solutions as well.
 
-<!-- ![Exam question only](figures/exam1.pdf)
-![Same question with solution printed](figures/exam2.pdf) -->
+![Exam question](figures/exam1.pdf)
 
-<div style="float:left">
+<!-- <div style="float:left">
   <img src="figures/exam1.pdf" width="90%" border=0>
-</div>
+</div> -->
 
 
 Download a sample test paper from my SM-2401 module: [Test paper](samples/sm2401_2020s1,t1.pdf) and [Solutions](samples/sm2401_2020s1,t1_soln.pdf)
@@ -79,9 +78,12 @@ One of the powers of LaTeX is being able to programmatically typeset a document.
 That means, with a certain template, one may create and recreate the document under different circumstances.
 As an example, for syllabus documents the schedule template remains the same but the start date of the semester changes every time.
 
-<div style="float:left">
+<!-- <div style="float:left">
   <img src="figures/syllabus.pdf" width="90%" border=0>
-</div>
+</div> -->
+
+![Exam question](figures/syllabus.pdf)
+
 
 Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
 
