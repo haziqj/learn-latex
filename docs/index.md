@@ -44,11 +44,23 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 ## Showcase
 
-- Beamer UBD
+### Presentations using beamer class
 
-### `exams` class
+If you have a lot of mathematical notations to present or would just like to create beautiful presentation slides using LaTeX, consider exploring the beamer class.
 
-Using the `exams` class, we can typeset exam questions and solutions in a single latex file. 
+<div style="float:left">
+  <img src="figures/slides-1.tiff" width="45%" border=0>
+  <img src="figures/slides-2.tiff" width="45%" border=0>
+  <img src="figures/slides-3.tiff" width="45%" border=0>
+  <img src="figures/slides-4.tiff" width="45%" border=0>
+</div>
+
+I have created an unofficial beamer *theme* designed for [Universiti Brunei Darussalam](https://ubd.edu.bn), featuring a minimalistic design and a pastel-ised palette taken from UBD's colours.
+The workshop slides was created using this theme.
+
+### Exams class
+
+Using the [`exams`](https://www.overleaf.com/learn/latex/Typesetting_exams_in_LaTeX) class, we can typeset exam questions and solutions in a single latex file. 
 Then, using the `answers` toggle as an option, we can either typeset the exam paper only, or print out the solutions as well.
 
 ![Exam question only](figures/exam1.pdf)
@@ -56,5 +68,7 @@ Then, using the `answers` toggle as an option, we can either typeset the exam pa
 
 Download a sample test paper from my SM-4335 module: [Test paper](samples/sm4335_2021s1,t1.pdf) and [Solutions](samples/sm4335_2021s1,t1_soln.pdf)
 
-- Syllabus document
+### Syllabus document
+
+
 
