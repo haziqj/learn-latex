@@ -44,7 +44,14 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 - Beamer UBD
 
-- Exams class
+### `exams` class
+
+Using the `exams` class, we can typeset exam questions and solutions in a single latex file. 
+Then, using the `answers` toggle as an option, we can either typeset the exam paper only, or print out the solutions as well.
+
+![Exam question only](figures/exam1.pdf)
+![Same question with solution printed](figures/exam2.pdf)
+
 
 - Syllabus document
 
