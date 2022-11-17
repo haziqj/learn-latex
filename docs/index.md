@@ -1,5 +1,7 @@
 # Quality Typography in Teaching Material
 
+# https://haziqj.ml/learn-latex
+
 ## TLC Workshop
 
 - Speaker: [Haziq Jamil](https://haziqj.ml)
