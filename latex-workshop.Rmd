@@ -1,11 +1,12 @@
 ---
 title: An Interactive Introduction to \LaTeX
-subtitle: TLC Workshop
+subtitle: |
+  | TLC Workshop 
+  | https://haziqj.ml/learn-latex
 author: Haziq Jamil
 date: "Wednesday, 23 November 2022"
 institute: |
   | Mathematical Sciences, Faculty of Science, UBD
-  | \url{https://haziqj.ml}
 output: 
   beamer_presentation:
     template: ubd_beamer_rmd.tex
@@ -69,22 +70,22 @@ knitr::include_graphics("figure/kerning.png")
 
 \vspace{-0.5em}
 
-- It makes [beautiful](https://www.lode.de/blog/comparing-word-and-latex) documents.
+- It makes [\underline{beautiful}](https://nitens.org/w/latex/) documents.
 
 - Open source and active community. Lots of packages available.
 
-- Extensible document types (articles, presentation slides, books, theses, exam papers, etc.)
+- Extensible document types (articles, presentation slides, books, theses, exam papers, etc.).
 
 ::: {.alertblock latex="{Reminder}"}
 Sign up for Overleaf if you haven't done so!
 :::
 
 
-### How does it work?
+## How does it work?
 
 - You write your document in `plain text` with commands that describe its structure and meaning.
 
-- The \LaTeX program then processes your text and commands to produce a beautifully formatted document.
+- The \LaTeX\ program then processes your text and commands to produce a beautifully formatted document.
 
 ```latex
 The rain in Spain falls \emph{mainly} on the plain.
@@ -96,15 +97,17 @@ The rain in Spain falls \emph{mainly} on the plain.
 \tikz\node[single arrow,fill=gray,font=\ttfamily\bfseries,%
   rotate=270,xshift=-1em]{latex};
 \vskip 1ex
+\begin{center}\Large
 The rain in Spain falls \emph{mainly} on the plain.
+\end{center}
 ```
 
-
-
+\blfootnote{This workshop is inspired by the \LaTeX\ course by 
+\href{https://github.com/jdleesmiller/latex-course}{JD Miller}. MIT license.}
 
 ### More examples of commands and output...
 
-
+\vspace{-1.5em}
 
 ::: {.columns}
 
@@ -132,10 +135,6 @@ The rain in Spain falls \emph{mainly} on the plain.
 
 :::
 
-
-
-
-
 ::: {.columns}
 
 ::: {.column width=48%}
@@ -149,7 +148,7 @@ The rain in Spain falls \emph{mainly} on the plain.
 ::: {.column width=48%}
 
 \begin{figure}
-\includegraphics{gerbil}
+\includegraphics{gerbil}*
 \end{figure}
 :::
 
@@ -177,6 +176,9 @@ y = \alpha + \beta x
 :::
 
 :::
+
+
+\blfootnote{*Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
 
 ### Attitude adjustment
 
@@ -209,14 +211,14 @@ tibble(
 
 ## Showcasing \LaTeX
 
-### Picture alignment/placement
+### Float placements
 
-\LaTeX\ takes care of figure placements automatically.
+\LaTeX\ takes care of figure placements ("floats") automatically.
 
 ::: {.columns}
 
 ::: {.column width=64%}
-```{r piechart}
+```{r piechart, fig.height = 3.2, fig.width = 4.3}
 tibble(
   group = LETTERS[1:2],
   value = c(98, 2)
@@ -234,7 +236,7 @@ tibble(
   #   "It actually\ndoes what\nyou want\n"
   # ), guide = guide_legend(override.aes = list(size = 1))) +
   labs(title = "Moving a picture in MS Word") +
-  theme_void()
+  theme_void() 
 ```
 :::
 
@@ -251,17 +253,17 @@ tibble(
 
 :::
 
-### References and bibliography
+### Citations
 
 Sometimes, however, what others tell us is important as *corroboration* of what we have already found out (or think we have found out) for ourselves.
-The Scottish philosopher Thomas Reid makes this point in connection with mathematical research in the belief that, if it applies to the science 'in which, of all sciences, authoritiy is acknowledges to have least weight' \cite{reid2002thomas}, it will be even more significant in other areas of thought and practice... Russell, as we shall see in a later chapter, considered this aspect of our reliance upon testimony essential to the understanding of what it is to be a physical thing and he criticized logical positivism for its failure to appreciate the implications of this point \cite{russell2007logic}.
-In the Analysis of Matter he says explicitly, `I mean here by "objective" not anything metaphysical but merely "agreeing with the testimony of others"' \cite{russell2015analysis}.
+The Scottish philosopher Thomas Reid makes this point in connection with mathematical research in the belief that, if it applies to the science 'in which, of all sciences, authority is acknowledged to have least weight' \cite{reid2002thomas}, it will be even more significant in other areas of thought and practice... Russell, as we shall see in a later chapter, considered this aspect of our reliance upon testimony essential to the understanding of what it is to be a physical thing and he criticized logical positivism for its failure to appreciate the implications of this point \cite{russell2007logic}.
+In the Analysis of Matter he says explicitly, 'I mean here by "objective" not anything metaphysical but merely "agreeing with the testimony of others"' \cite{russell2015analysis}.
 
 \vspace{1em}
 
 Excerpt from *Testimony: A Philosophical Study* by C. A. J. Coady (1992)
 
-### References
+### Bibliography
 
 \nocite{coady1992testimony}
 \printbibliography[heading=none]
@@ -279,13 +281,14 @@ f(x) = \frac{1}{\sqrt{2\pi}} \exp\left[ -\frac{1}{2}\left(\frac{x - \mu}{\sigma/
 \end{equation}
 :::
 
-The proof of Theorem \ref{thm:clt} uses *charactertistic functions*, whereby the standardised version of \eqref{eq:clt} is obtained in the limit.
+The proof of Theorem \ref{thm:clt} uses *characteristic functions*, whereby the standardised version of \eqref{eq:clt} is obtained in the limit as $n\to\infty$.
 
-### A chemistry example
+### Chemical equations
 
 \begin{figure}
     \centering
     \small
+    \fbox{
     \schemestart
         \chemname{
             \chemfig{
@@ -320,13 +323,15 @@ The proof of Theorem \ref{thm:clt} uses *charactertistic functions*, whereby the
             }
         }{Glycerol}
     \schemestop
+    }
+    \vspace{0.5em}
     \caption{Transesterification of triglyceride with alcohol.}
     \label{scm:tsester}
 \end{figure}
 
 \blfootnote{Figure \ref{scm:tsester} obtained from \url{https://tex.stackexchange.com/a/472486}}
 
-### Languages
+### Multilingual support
 
 \vspace{-2em}
 
@@ -356,7 +361,7 @@ knitr::include_graphics("figure/00-haidaosuanjing.jpg")
 
 :::
 
-### For teaching
+## For teaching
 
 - Setting of question papers (assignments, tests, exams, etc.)
 - Syllabus documents
@@ -374,7 +379,7 @@ Hello, World!  % your content goes here...
 \end{document}
 ```
 
-- Commands start with a backslash \framebox{\texttt{\textbackslash}
+- Commands start with a backslash \framebox{\texttt{\textbackslash}}.
 
 - Every document starts with a `\documentclass`{.latex} command.
 
@@ -1067,7 +1072,7 @@ knitr::include_graphics("figure/maketitle.pdf")
 \vspace{-1em}
 ```latex
 \documentclass{article}
-\usepackage{lipsum}
+\usepackage{lipsum}  % load this 
 \title{The Title}
 \author{A. Author \and A. Nother}
 \date{\today}
@@ -1076,7 +1081,7 @@ knitr::include_graphics("figure/maketitle.pdf")
 \maketitle
 
 \begin{abstract}
-\lipsum[1]
+\lipsum[1]  % placeholder text
 \end{abstract}
 
 \end{document}

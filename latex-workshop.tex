@@ -21,10 +21,10 @@
 
 \title{An Interactive Introduction to \LaTeX}
 
-\subtitle{TLC Workshop}
+\subtitle{TLC Workshop\\
+\url{https://haziqj.ml/learn-latex}}
 
-\institute{Mathematical Sciences, Faculty of Science, UBD\\
-\url{https://haziqj.ml}}
+\institute{Mathematical Sciences, Faculty of Science, UBD}
 
 \date{Wednesday, 23 November 2022}
 
@@ -451,14 +451,13 @@
 
 \begin{itemize}
 \item
-  It makes
-  \href{https://www.lode.de/blog/comparing-word-and-latex}{beautiful}
+  It makes \href{https://nitens.org/w/latex/}{\underline{beautiful}}
   documents.
 \item
   Open source and active community. Lots of packages available.
 \item
   Extensible document types (articles, presentation slides, books,
-  theses, exam papers, etc.)
+  theses, exam papers, etc.).
 \end{itemize}
 
 \begin{alertblock}{Reminder}
@@ -467,14 +466,16 @@ Sign up for Overleaf if you haven't done so!
 \end{alertblock}
 \end{frame}
 
+\hypertarget{how-does-it-work}{%
+\subsection{How does it work?}\label{how-does-it-work}}
+
 \begin{frame}[fragile]{How does it work?}
-\protect\hypertarget{how-does-it-work}{}
 \begin{itemize}
 \item
   You write your document in \texttt{plain\ text} with commands that
   describe its structure and meaning.
 \item
-  The \LaTeX program then processes your text and commands to produce a
+  The \LaTeX~program then processes your text and commands to produce a
   beautifully formatted document.
 \end{itemize}
 
@@ -489,12 +490,18 @@ Sign up for Overleaf if you haven't done so!
 \tikz\node[single arrow,fill=gray,font=\ttfamily\bfseries,%
   rotate=270,xshift=-1em]{latex};
 \vskip 1ex
-
+\begin{center}\Large
 The rain in Spain falls \emph{mainly} on the plain.
+\end{center}
+
+\blfootnote{This workshop is inspired by the \LaTeX\ course by 
+\href{https://github.com/jdleesmiller/latex-course}{JD Miller}. MIT license.}
 \end{frame}
 
 \begin{frame}[fragile]{More examples of commands and output\ldots{}}
 \protect\hypertarget{more-examples-of-commands-and-output}{}
+\vspace{-1.5em}
+
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
 \begin{Shaded}
@@ -532,7 +539,7 @@ The rain in Spain falls \emph{mainly} on the plain.
 
 \begin{column}{0.48\textwidth}
 \begin{figure}
-\includegraphics{gerbil}
+\includegraphics{gerbil}*
 \end{figure}
 \end{column}
 \end{columns}
@@ -556,6 +563,8 @@ y = \alpha + \beta x
 \end{equation}
 \end{column}
 \end{columns}
+
+\blfootnote{*Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
 \end{frame}
 
 \begin{frame}{Attitude adjustment}
@@ -576,9 +585,9 @@ y = \alpha + \beta x
 \subsection{\texorpdfstring{Showcasing
 \LaTeX}{Showcasing }}\label{showcasing}}
 
-\begin{frame}{Picture alignment/placement}
-\protect\hypertarget{picture-alignmentplacement}{}
-\LaTeX~takes care of figure placements automatically.
+\begin{frame}{Float placements}
+\protect\hypertarget{float-placements}{}
+\LaTeX~takes care of figure placements (``floats'') automatically.
 
 \begin{columns}[T]
 \begin{column}{0.64\textwidth}
@@ -595,14 +604,14 @@ y = \alpha + \beta x
 \end{columns}
 \end{frame}
 
-\begin{frame}{References and bibliography}
-\protect\hypertarget{references-and-bibliography}{}
+\begin{frame}{Citations}
+\protect\hypertarget{citations}{}
 Sometimes, however, what others tell us is important as
 \emph{corroboration} of what we have already found out (or think we have
 found out) for ourselves. The Scottish philosopher Thomas Reid makes
 this point in connection with mathematical research in the belief that,
-if it applies to the science `in which, of all sciences, authoritiy is
-acknowledges to have least weight' \cite{reid2002thomas}, it will be
+if it applies to the science `in which, of all sciences, authority is
+acknowledged to have least weight' \cite{reid2002thomas}, it will be
 even more significant in other areas of thought and practice\ldots{}
 Russell, as we shall see in a later chapter, considered this aspect of
 our reliance upon testimony essential to the understanding of what it is
@@ -610,7 +619,7 @@ to be a physical thing and he criticized logical positivism for its
 failure to appreciate the implications of this point
 \cite{russell2007logic}. In the Analysis of Matter he says explicitly,
 `I mean here by ``objective'' not anything metaphysical but merely
-``agreeing with the testimony of others''' \cite{russell2015analysis}.
+``agreeing with the testimony of others''\,' \cite{russell2015analysis}.
 
 \vspace{1em}
 
@@ -618,8 +627,8 @@ Excerpt from \emph{Testimony: A Philosophical Study} by C. A. J. Coady
 (1992)
 \end{frame}
 
-\begin{frame}{References}
-\protect\hypertarget{references}{}
+\begin{frame}{Bibliography}
+\protect\hypertarget{bibliography}{}
 \nocite{coady1992testimony} \printbibliography[heading=none]
 \end{frame}
 
@@ -636,16 +645,17 @@ f(x) = \frac{1}{\sqrt{2\pi}} \exp\left[ -\frac{1}{2}\left(\frac{x - \mu}{\sigma/
 \end{equation}
 \end{theorem}
 
-The proof of Theorem \ref{thm:clt} uses \emph{charactertistic
-functions}, whereby the standardised version of \eqref{eq:clt} is
-obtained in the limit.
+The proof of Theorem \ref{thm:clt} uses \emph{characteristic functions},
+whereby the standardised version of \eqref{eq:clt} is obtained in the
+limit as \(n\to\infty\).
 \end{frame}
 
-\begin{frame}{A chemistry example}
-\protect\hypertarget{a-chemistry-example}{}
+\begin{frame}{Chemical equations}
+\protect\hypertarget{chemical-equations}{}
 \begin{figure}
     \centering
     \small
+    \fbox{
     \schemestart
         \chemname{
             \chemfig{
@@ -680,6 +690,8 @@ obtained in the limit.
             }
         }{Glycerol}
     \schemestop
+    }
+    \vspace{0.5em}
     \caption{Transesterification of triglyceride with alcohol.}
     \label{scm:tsester}
 \end{figure}
@@ -687,8 +699,8 @@ obtained in the limit.
 \blfootnote{Figure \ref{scm:tsester} obtained from \url{https://tex.stackexchange.com/a/472486}}
 \end{frame}
 
-\begin{frame}{Languages}
-\protect\hypertarget{languages}{}
+\begin{frame}{Multilingual support}
+\protect\hypertarget{multilingual-support}{}
 \vspace{-2em}
 
 \begin{columns}[T]
@@ -714,8 +726,10 @@ early on (祖冲之 Zǔ Chōng Zhī, 500 CE).
 \end{columns}
 \end{frame}
 
+\hypertarget{for-teaching}{%
+\subsection{For teaching}\label{for-teaching}}
+
 \begin{frame}{For teaching}
-\protect\hypertarget{for-teaching}{}
 \begin{itemize}
 \tightlist
 \item
@@ -744,8 +758,7 @@ early on (祖冲之 Zǔ Chōng Zhī, 500 CE).
 
 \begin{itemize}
 \item
-  Commands start with a backslash
-  \textbackslash framebox\{\texttt{\textbackslash}
+  Commands start with a backslash \framebox{\texttt{\textbackslash}}.
 \item
   Every document starts with a
   \VERB|\BuiltInTok{\textbackslash{}documentclass}| command.
@@ -1640,7 +1653,7 @@ to open this exercise in \textbf{Overleaf}.
 \begin{Shaded}
 \begin{Highlighting}[]
 \BuiltInTok{\textbackslash{}documentclass}\NormalTok{\{}\ExtensionTok{article}\NormalTok{\}}
-\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{lipsum}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{lipsum}\NormalTok{\}  }\CommentTok{\% load this }
 \FunctionTok{\textbackslash{}title}\NormalTok{\{The Title\}}
 \FunctionTok{\textbackslash{}author}\NormalTok{\{A. Author }\FunctionTok{\textbackslash{}and}\NormalTok{ A. Nother\}}
 \FunctionTok{\textbackslash{}date}\NormalTok{\{}\FunctionTok{\textbackslash{}today}\NormalTok{\}}
@@ -1649,7 +1662,7 @@ to open this exercise in \textbf{Overleaf}.
 \FunctionTok{\textbackslash{}maketitle}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{abstract}\NormalTok{\}}
-\FunctionTok{\textbackslash{}lipsum}\NormalTok{[1]}
+\FunctionTok{\textbackslash{}lipsum}\NormalTok{[1]  }\CommentTok{\% placeholder text}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{abstract}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
@@ -1777,8 +1790,8 @@ to open this exercise in \textbf{Overleaf}.
 \end{varblock}
 \end{frame}
 
-\hypertarget{bibliography}{%
-\section{Bibliography}\label{bibliography}}
+\hypertarget{bibliography-1}{%
+\section{Bibliography}\label{bibliography-1}}
 
 \hypertarget{the-bibtex-format}{%
 \subsection{The bibtex format}\label{the-bibtex-format}}
