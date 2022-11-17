@@ -11,7 +11,7 @@
 
 Additional instructions:
 
-> Please be reminded to sign up for an account on Overleaf.com.  Dual device/monitors are recommended for best experience in this online workshop.
+> Please be reminded to <u>sign up</u> for an account on Overleaf.com.  **Dual device/monitors** are recommended for best experience in this online workshop.
 
 ## Abstract
 
@@ -63,8 +63,14 @@ The workshop slides was created using this theme.
 Using the [`exams`](https://www.overleaf.com/learn/latex/Typesetting_exams_in_LaTeX) class, we can typeset exam questions and solutions in a single latex file. 
 Then, using the `answers` toggle as an option, we can either typeset the exam paper only, or print out the solutions as well.
 
-![Exam question only](figures/exam1.pdf)
-![Same question with solution printed](figures/exam2.pdf)
+<!-- ![Exam question only](figures/exam1.pdf)
+![Same question with solution printed](figures/exam2.pdf) -->
+
+<div style="float:left">
+  <img src="figures/exam1.pdf" width="90%" border=0>
+  <img src="figures/exam2.pdf" width="90%" border=0>
+</div>
+
 
 Download a sample test paper from my SM-4335 module: [Test paper](samples/sm4335_2021s1,t1.pdf) and [Solutions](samples/sm4335_2021s1,t1_soln.pdf)
 
