@@ -48,14 +48,16 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 If you have a lot of mathematical notations to present or would just like to create beautiful presentation slides using LaTeX, consider exploring the [beamer](https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_(Part_1)—Getting_Started) class.
 
-<kbd>
+
 <div style="float:left">
-  <img src="figures/slides-1.tiff" width="45%" style="border:3px solid black">
-  <img src="figures/slides-2.tiff" width="45%" style="border:3px solid black">
-  <img src="figures/slides-3.tiff" width="45%" style="border:3px solid black">
-  <img src="figures/slides-4.tiff" width="45%" style="border:3px solid black">
+  <kbd>
+  <img src="figures/slides-1.tiff" width="45%" style="border:2px solid black">
+  <img src="figures/slides-2.tiff" width="45%" style="border:2px solid black">
+  <img src="figures/slides-3.tiff" width="45%" style="border:2px solid black">
+  <img src="figures/slides-4.tiff" width="45%" style="border:2px solid black">
+  </kbd>
 </div>
-</kbd>
+
 
 I have created an unofficial beamer *theme* designed for [Universiti Brunei Darussalam](https://ubd.edu.bn), featuring a minimalistic design and a pastel-ised palette taken from UBD's colours.
 The workshop slides was created using this theme.
