@@ -68,13 +68,13 @@ Then, using the `answers` toggle as an option, we can either typeset the exam pa
 
 <div style="float:left">
   <img src="figures/exam1.pdf" width="90%" border=0>
-  <img src="figures/exam2.pdf" width="90%" border=0>
 </div>
 
 
-Download a sample test paper from my SM-4335 module: [Test paper](samples/sm4335_2021s1,t1.pdf) and [Solutions](samples/sm4335_2021s1,t1_soln.pdf)
+Download a sample test paper from my SM-2401 module: [Test paper](samples/sm2401_2020s1,t1.pdf) and [Solutions](samples/sm2401_2020s1,t1_soln.pdf)
 
 ### Syllabus document
 
+Download a sample test paper from my SM-4335 module: [Test paper](samples/sm4335_2021s1,t1.pdf) and [Solutions](samples/sm4335_2021s1,t1_soln.pdf)
 
 
