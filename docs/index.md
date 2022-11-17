@@ -52,6 +52,7 @@ Then, using the `answers` toggle as an option, we can either typeset the exam pa
 ![Exam question only](figures/exam1.pdf)
 ![Same question with solution printed](figures/exam2.pdf)
 
+Download a sample test paper from my SM-4335 module: [Test paper](samples/sm4335_2021s1,t1.pdf) and [Solutions](samples/sm4335_2021s1,t1_soln.pdf)
 
 - Syllabus document
 
