@@ -11,7 +11,7 @@
 
 Additional instructions:
 
-> Please be reminded to <u>sign up</u> for an account on Overleaf.com.  **Dual device/monitors** are recommended for best experience in this online workshop.
+> Please be reminded to [<u>sign up</u>](https://www.overleaf.com/register) for an account on Overleaf.com.  **Dual device/monitors** are recommended for best experience in this online workshop.
 
 ## Abstract
 
