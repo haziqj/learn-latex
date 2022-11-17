@@ -48,12 +48,14 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 If you have a lot of mathematical notations to present or would just like to create beautiful presentation slides using LaTeX, consider exploring the [beamer](https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_(Part_1)—Getting_Started) class.
 
+<kbd>
 <div style="float:left">
-  <img src="figures/slides-1.tiff" width="45%" border=5>
-  <img src="figures/slides-2.tiff" width="45%" border=5>
-  <img src="figures/slides-3.tiff" width="45%" border=5>
-  <img src="figures/slides-4.tiff" width="45%" border=5>
+  <img src="figures/slides-1.tiff" width="45%" style="border:3px solid black">
+  <img src="figures/slides-2.tiff" width="45%" style="border:3px solid black">
+  <img src="figures/slides-3.tiff" width="45%" style="border:3px solid black">
+  <img src="figures/slides-4.tiff" width="45%" style="border:3px solid black">
 </div>
+</kbd>
 
 I have created an unofficial beamer *theme* designed for [Universiti Brunei Darussalam](https://ubd.edu.bn), featuring a minimalistic design and a pastel-ised palette taken from UBD's colours.
 The workshop slides was created using this theme.
@@ -63,7 +65,7 @@ The workshop slides was created using this theme.
 Using the [`exams`](https://www.overleaf.com/learn/latex/Typesetting_exams_in_LaTeX) class, we can typeset exam questions and solutions in a single latex file. 
 Then, using the `answers` toggle as an option, we can either typeset the exam paper only, or print out the solutions as well.
 
-<kbd><img src="figures/exam1.pdf" border=5></kbd>
+<kbd><img src="figures/exam1.pdf"></kbd>
 
 Download a sample test paper from my SM-2401 module: [Test paper](samples/sm2401_2020s1,t1.pdf) and [Solutions](samples/sm2401_2020s1,t1_soln.pdf)
 
@@ -73,7 +75,7 @@ One of the powers of LaTeX is being able to programmatically typeset a document.
 That means, with a certain template, one may create and recreate the document under different circumstances.
 As an example, for syllabus documents the schedule template remains the same but the start date of the semester changes every time.
 
-<kbd><img src="figures/syllabus.pdf" border=5></kbd>
+<kbd><img src="figures/syllabus.pdf"></kbd>
 
 
 Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
