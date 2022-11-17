@@ -59,7 +59,7 @@ If you have a lot of mathematical notations to present or would just like to cre
 </div>
 
 
-I have created an unofficial beamer *theme* designed for [Universiti Brunei Darussalam](https://ubd.edu.bn), featuring a minimalistic design and a pastel-ised palette taken from UBD's colours.
+I have created an unofficial beamer [*theme*](https://github.com/haziqj/ubd-beamer) designed for Universiti Brunei Darussalam, featuring a minimalistic design and a pastel-ised palette taken from UBD's colours.
 The workshop slides was created using this theme.
 
 ### Exams class
@@ -78,7 +78,6 @@ That means, with a certain template, one may create and recreate the document un
 As an example, for syllabus documents the schedule template remains the same but the start date of the semester changes every time.
 
 <kbd><img src="figures/syllabus.pdf"></kbd>
-
 
 Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
 
