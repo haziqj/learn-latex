@@ -51,10 +51,10 @@ If you have a lot of mathematical notations to present or would just like to cre
 
 <div style="float:left">
   <kbd>
-  <img src="figures/slides-1.tiff" width="50%" style="border:1px solid black">
-  <img src="figures/slides-2.tiff" width="50%" style="border:1px solid black">
-  <img src="figures/slides-3.tiff" width="50%" style="border:1px solid black">
-  <img src="figures/slides-4.tiff" width="50%" style="border:1px solid black">
+  <img src="figures/slides-1.tiff" width="49%" style="border:1px solid black">
+  <img src="figures/slides-2.tiff" width="49%" style="border:1px solid black">
+  <img src="figures/slides-3.tiff" width="49%" style="border:1px solid black">
+  <img src="figures/slides-4.tiff" width="49%" style="border:1px solid black">
   </kbd>
 </div>
 
