@@ -75,6 +75,14 @@ Download a sample test paper from my SM-2401 module: [Test paper](samples/sm2401
 
 ### Syllabus document
 
-Download a sample test paper from my SM-4335 module: [Test paper](samples/sm4335_2021s1,t1.pdf) and [Solutions](samples/sm4335_2021s1,t1_soln.pdf)
+One of the powers of LaTeX is being able to programmatically typeset a document.
+That means, with a certain template, one may create and recreate the document under different circumstances.
+As an example, for syllabus documents the schedule template remains the same but the start date of the semester changes every time.
+
+<div style="float:left">
+  <img src="figures/syllabus.pdf" width="90%" border=0>
+</div>
+
+Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
 
 
