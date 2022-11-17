@@ -46,7 +46,7 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 ### Presentations using beamer class
 
-If you have a lot of mathematical notations to present or would just like to create beautiful presentation slides using LaTeX, consider exploring the beamer class.
+If you have a lot of mathematical notations to present or would just like to create beautiful presentation slides using LaTeX, consider exploring the [beamer](https://www.overleaf.com/learn/latex/Beamer_Presentations%3A_A_Tutorial_for_Beginners_(Part_1)—Getting_Started) class.
 
 <div style="float:left">
   <img src="figures/slides-1.tiff" width="45%" border=0>
