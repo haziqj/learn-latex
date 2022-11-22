@@ -94,9 +94,11 @@ One of the powers of LaTeX is being able to programmatically typeset a document.
 That means, with a certain template, one may create and recreate the document under different circumstances.
 As an example, for syllabus documents the schedule template remains the same but the start date of the semester changes every time.
 
-<kbd>
+<!-- <kbd>
   <img src="figures/syllabus.pdf">
 </kbd>
+ -->
+![](figures/syllabus.pdf)
 
 Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
 
