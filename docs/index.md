@@ -66,10 +66,10 @@ If you have a lot of mathematical notations to present or would just like to cre
 
 <div style="float:left">
   <kbd>
-  <img src="figures/slides-1.tiff" width="49%" style="border:1px solid black">
-  <img src="figures/slides-2.tiff" width="49%" style="border:1px solid black">
-  <img src="figures/slides-3.tiff" width="49%" style="border:1px solid black">
-  <img src="figures/slides-4.tiff" width="49%" style="border:1px solid black">
+  <img src="figures/slides-1.png" width="49%" style="border:1px solid black">
+  <img src="figures/slides-2.png" width="49%" style="border:1px solid black">
+  <img src="figures/slides-3.png" width="49%" style="border:1px solid black">
+  <img src="figures/slides-4.png" width="49%" style="border:1px solid black">
   </kbd>
 </div>
 
@@ -83,7 +83,7 @@ Using the [`exams`](https://www.overleaf.com/learn/latex/Typesetting_exams_in_La
 Then, using the `answers` toggle as an option, we can either typeset the exam paper only, or print out the solutions as well.
 
 <kbd>
-  <img src="figures/exam1.pdf">
+  <img src="figures/exam1.png">
 </kbd>
 
 Download a sample test paper from my SM-2401 module: [Test paper](samples/sm2401_2020s1,t1.pdf) and [Solutions](samples/sm2401_2020s1,t1_soln.pdf)
@@ -99,7 +99,6 @@ As an example, for syllabus documents the schedule template remains the same but
 </kbd>
 
 
-![](figures/syllabus.png)
 
 Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
 
