@@ -13,6 +13,19 @@ Additional instructions:
 
 > Please be reminded to [<u>sign up</u>](https://www.overleaf.com/register) for an account on Overleaf.com.  **Dual device/monitors** are recommended for best experience in this online workshop.
 
+## Workshop Poll
+
+<script type="text/javascript">
+(function(d,s,id,u){
+  if (d.getElementById(id)) return;
+  var js, sjs = d.getElementsByTagName(s)[0],
+      t = Math.floor(new Date().getTime() / 1000000);
+  js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
+  sjs.parentNode.insertBefore(js, sjs);
+}(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
+</script><div id="os-widget-1085060" class="os_poll" data-path="/polls/2878713" data-of="haziq-jamil" data-opinionstage-widget="6a2bbdd8-3b39-4ce5-9c19-58075e669794"></div>
+
+
 ## Abstract
 
 Have you heard of LaTeX, the software system for document preparation? Unlike MS Word or Google Docs, the user uses plain text to prepare the document programmatically, which, in turn, is compiled by the LaTeX program into PDF format. This roundabout way of things has its advantages: LaTeX produces consistent document layouts allowing you to focus on content; makes bibliography and referencing a breeze; and facilitates typesetting of mathematical equations. LaTeX has been adopted across a wide variety of academic fields as a means of communicating and publishing scientific documents. It’s also a valuable tool for teaching material preparation (e.g. lecture slides, posters, exam papers, etc.), particularly for mathematical-based subjects. In this interactive workshop, we will learn the basics of LaTeX using the free online platform Overleaf.com. The primary learning outcome is for participants to be able to typeset a short article-style paper containing equations, figures, tables, and a bibliography. No prior programming knowledge is assumed.
