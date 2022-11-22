@@ -34,7 +34,7 @@ Have you heard of LaTeX, the software system for document preparation? Unlike MS
 
 ## Learning outcomes
 
-> **The target sample document: [PDF](sample-article.pdf)**
+> **The target sample document: [PDF](sample-article.pdf)**--a completely artificial and made up paper using [SciGen](https://www.npmjs.com/package/scigen)
 
 - Use Overleaf to typeset text in LaTeX
 - Use different LaTeX commands
