@@ -1,12 +1,11 @@
 ---
 title: An Interactive Introduction to \LaTeX
-subtitle: |
-  | TLC Workshop 
-  | https://haziqj.ml/learn-latex
+subtitle: TLC Workshop 
 author: Haziq Jamil
 date: "Wednesday, 23 November 2022"
 institute: |
   | Mathematical Sciences, Faculty of Science, UBD
+  | https://haziqj.ml/learn-latex
 output: 
   beamer_presentation:
     template: ubd_beamer_rmd.tex

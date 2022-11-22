@@ -15,7 +15,9 @@ Additional instructions:
 
 ## Workshop Poll
 
-<script type="text/javascript">
+Goes live on the day of workshop.
+
+<!-- <script type="text/javascript">
 (function(d,s,id,u){
   if (d.getElementById(id)) return;
   var js, sjs = d.getElementsByTagName(s)[0],
@@ -23,7 +25,7 @@ Additional instructions:
   js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
   sjs.parentNode.insertBefore(js, sjs);
 }(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
-</script><div id="os-widget-1085060" class="os_poll" data-path="/polls/2878713" data-of="haziq-jamil" data-opinionstage-widget="6a2bbdd8-3b39-4ce5-9c19-58075e669794"></div>
+</script><div id="os-widget-1085061" class="os_poll" data-path="/polls/2878714" data-of="haziq-jamil" data-opinionstage-widget="79bdb7f3-95fb-4384-8594-9dfe1baaf15c"></div> -->
 
 
 ## Abstract
