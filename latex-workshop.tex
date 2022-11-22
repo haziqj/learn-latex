@@ -452,7 +452,8 @@
 \begin{itemize}
 \item
   It makes \href{https://nitens.org/w/latex/}{\underline{beautiful}}
-  documents.
+  documents (kerning, ligatures,
+  \href{https://tex.stackexchange.com/questions/110133/visual-comparison-between-latex-and-word-output-hyphenation-typesetting-ligat}{\underline{hyphenation}}).
 \item
   Open source and active community. Lots of packages available.
 \item
@@ -830,7 +831,7 @@ to sign in first). Let's get started!
 \begin{column}{0.48\textwidth}
 Words are separated by one or more spaces.
 
-\hfill\break
+\vspace{1.2em}
 
 Paragraphs are separated by one or more blank lines.
 \end{column}
@@ -867,8 +868,8 @@ The rain in Spain falls mainly on the plain.
 \begin{itemize}
 \tightlist
 \item
-  Quotation marks a bit tricky: Use a backtick \framebox{\texttt{`}} on
-  the left and an apostrophe \framebox{\texttt{'}} on the right.
+  Quotation marks are a bit tricky: Use a backtick \framebox{\texttt{`}}
+  on the left and an apostrophe \framebox{\texttt{'}} on the right.
 \end{itemize}
 
 \begin{columns}[T]
@@ -887,7 +888,7 @@ The rain in Spain falls mainly on the plain.
 \begin{column}{0.48\textwidth}
 Single quotes: `text'.
 
-\hfill\break
+\vspace{1.2em}
 
 Double quotes: ``text''.
 \end{column}
@@ -1054,7 +1055,7 @@ Let \(a\) and \(b\) be distinct positive integers, and let
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
 \small
-\vspace{-1em}
+\vspace{-1.1em}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1068,7 +1069,7 @@ Let \(a\) and \(b\) be distinct positive integers, and let
 \begin{column}{0.48\textwidth}
 Let \(y=mx+c\) be \ldots
 
-\vspace{1em}
+\vspace{1.2em}
 
 Let \(y = m x + c\) be \ldots
 \end{column}
@@ -1194,7 +1195,7 @@ Let \(y = m x + c\) be \ldots
 \begin{columns}[T]
 \begin{column}{0.58\textwidth}
 \small
-\vspace{-1em}
+\vspace{-1.1em}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1219,7 +1220,7 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}
 \vspace{0.5em}
 
 \begin{alertblock}{Caution}
-\LaTeX~ mostly ignores your spaces in mathematics, but it can't handle
+\LaTeX~mostly ignores your spaces in mathematics, but it can't handle
 blank lines in equations--don't put blank lines in your mathematics.
 
 \end{alertblock}
@@ -1270,7 +1271,7 @@ blank lines in equations--don't put blank lines in your mathematics.
   Tea
 \end{itemize}
 
-\vspace{2em}
+\vspace{2.5em}
 
 \begin{enumerate}
 \tightlist
@@ -1853,7 +1854,7 @@ to open this exercise in \textbf{Overleaf}.
   \VERB|\FunctionTok{\textbackslash{}addbibresource}|.
 \item
   At the end, print the bibliography using
-  \VERB|\FunctionTok{\textbackslash{}printbibliography}|
+  \VERB|\FunctionTok{\textbackslash{}printbibliography}|.
 \end{itemize}
 
 \begin{columns}[T]
@@ -2038,6 +2039,18 @@ You have now learned how to\ldots{}
 \begin{frame}[fragile]{Ready for more?}
 \protect\hypertarget{ready-for-more}{}
 \begin{itemize}
+\tightlist
+\item
+  \href{https://www.overleaf.com/for/community/resources}{\underline{Overleaf}}
+  is a great resource for learning \LaTeX:
+\end{itemize}
+
+\begin{center}
+\href{https://assets.ctfassets.net/nrgyaltdicpt/4e825etqMUW8vTF8drfRbw/d4f3d9adcb2980b80818f788e36316b2/A_quick_guide_to_LaTeX__Overleaf_version.pdf}{\includegraphics[width=0.45\textwidth,height=\textheight]{figure/quick_guide_latex.pdf}}
+
+\end{center}
+
+\begin{itemize}
 \item
   Other document classes
 
@@ -2059,9 +2072,76 @@ You have now learned how to\ldots{}
   Unofficial UBD \texttt{beamer} theme:
   \href{https://github.com/haziqj/ubd-beamer}{link}
 \item
+  Need to convert to docx? Consider \href{https://pandoc.org}{pandoc}.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{pandoc}\NormalTok{ mydoc.tex }\AttributeTok{{-}o}\NormalTok{ mydoc.docx}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{RMarkdown}
+\protect\hypertarget{rmarkdown}{}
+\begin{itemize}
+\tightlist
+\item
   Maybe next time: Reproducible documents using
   \href{https://rmarkdown.rstudio.com}{RMarkdown}.
 \end{itemize}
+
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\small
+\vspace{-1em}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{We write text in **Markdown**}
+\NormalTok{language.}
+
+\SpecialStringTok{{-} }\NormalTok{Tea}
+\SpecialStringTok{{-} }\NormalTok{Milk}
+\SpecialStringTok{{-} }\NormalTok{Biscuits}
+
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r\}}
+\InformationTok{1 + 1}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+
+\NormalTok{The content can contain inline }
+\NormalTok{code like}
+\InformationTok{\textasciigrave{}r round(pi * exp(1), 2)\textasciigrave{}}\NormalTok{, too.}
+\end{Highlighting}
+\end{Shaded}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+We write text in \textbf{Markdown} language.
+
+\begin{itemize}
+\tightlist
+\item
+  Tea
+\item
+  Milk
+\item
+  Biscuits
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2
+\end{verbatim}
+
+The content can contain inline code like 8.54, too.
+\end{column}
+\end{columns}
 \end{frame}
 
 

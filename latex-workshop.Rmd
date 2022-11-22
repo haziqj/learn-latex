@@ -70,7 +70,7 @@ knitr::include_graphics("figure/kerning.png")
 
 \vspace{-0.5em}
 
-- It makes [\underline{beautiful}](https://nitens.org/w/latex/) documents.
+- It makes [\underline{beautiful}](https://nitens.org/w/latex/) documents (kerning, ligatures, [\underline{hyphenation}](https://tex.stackexchange.com/questions/110133/visual-comparison-between-latex-and-word-output-hyphenation-typesetting-ligat)).
 
 - Open source and active community. Lots of packages available.
 
@@ -443,7 +443,7 @@ one or more blank lines.
 Words are separated by one
 or more spaces.
 
-\
+\vspace{1.2em}
 
 Paragraphs are separated by
 one or more blank lines.
@@ -475,7 +475,7 @@ falls mainly on the   plain.
 
 ### Typesetting text (Caveats)
 
-- Quotation marks a bit tricky: Use a backtick \framebox{\texttt{`}} on the left and an apostrophe \framebox{\texttt{'}} on the right.
+- Quotation marks are a bit tricky: Use a backtick \framebox{\texttt{`}} on the left and an apostrophe \framebox{\texttt{'}} on the right.
 
 ::: {.columns}
 
@@ -491,7 +491,7 @@ Double quotes: ``text''.
 ::: {.column width=48%}
 Single quotes: 'text'.
 
-\
+\vspace{1.2em}
 
 Double quotes: "text".
 :::
@@ -609,7 +609,7 @@ integers, and let $c = a - b + 1$.
 
 ::: {.column width=48%}
 \small
-\vspace{-1em}
+\vspace{-1.1em}
 ```latex
 Let $y=mx+c$ be \ldots
 
@@ -620,7 +620,7 @@ Let $y = m x + c$ be \ldots
 ::: {.column width=48%}
 Let $y=mx+c$ be \ldots
 
-\vspace{1em}
+\vspace{1.2em}
 
 Let $y = m x + c$ be \ldots
 :::
@@ -722,7 +722,7 @@ $\Omega = \sum_{k=1}^{n} \omega_k$
 
 ::: {.column width=58%}
 \small
-\vspace{-1em}
+\vspace{-1.1em}
 ```latex
 The roots of a quadratic equation are
 given by
@@ -747,7 +747,7 @@ where $a$, $b$ and $c$ are \ldots
 \vspace{0.5em}
 
 ::: {.alertblock latex="{Caution}"}
-\LaTeX\  mostly ignores your spaces in mathematics, but it can’t handle blank lines in equations--don’t put blank lines in your mathematics.
+\LaTeX\ mostly ignores your spaces in mathematics, but it can’t handle blank lines in equations--don’t put blank lines in your mathematics.
 :::
 
 
@@ -781,7 +781,7 @@ where $a$, $b$ and $c$ are \ldots
 - Biscuits
 - Tea
 
-\vspace{2em}
+\vspace{2.5em}
 
 1. Biscuits
 2. Tea
@@ -1238,7 +1238,7 @@ knitr::include_graphics("figure/googlescholar.png")
 
 - The bibliography file must be called using  `\addbibresource`{.latex}.
 
-- At the end, print the bibliography using `\printbibliography`{.latex}
+- At the end, print the bibliography using `\printbibliography`{.latex}.
 
 
 ::: {.columns}
@@ -1399,6 +1399,14 @@ You have now learned how to...
 
 ### Ready for more?
 
+- [\underline{Overleaf}](https://www.overleaf.com/for/community/resources) is a great resource for learning \LaTeX: 
+
+::: {.center latex=""}
+
+[![](figure/quick_guide_latex.pdf){ width=45% }](https://assets.ctfassets.net/nrgyaltdicpt/4e825etqMUW8vTF8drfRbw/d4f3d9adcb2980b80818f788e36316b2/A_quick_guide_to_LaTeX__Overleaf_version.pdf)
+
+:::
+
 - Other document classes
 
    1. Typesetting `exams`: [link](https://www.overleaf.com/learn/latex/Typesetting_exams_in_LaTeX)
@@ -1409,5 +1417,72 @@ You have now learned how to...
 
 - Unofficial UBD `beamer` theme: [link](https://github.com/haziqj/ubd-beamer)
 
+- Need to convert to docx? Consider [pandoc](https://pandoc.org).
+```bash
+pandoc mydoc.tex -o mydoc.docx
+```
+
+### RMarkdown
+
 - Maybe next time: Reproducible documents using [RMarkdown](https://rmarkdown.rstudio.com).
+
+
+::: {.columns}
+
+::: {.column width=48%}
+\small
+\vspace{-1em}
+````{verbatim, lang = "markdown", echo = TRUE}
+We write text in **Markdown**
+language.
+
+- Tea
+- Milk
+- Biscuits
+
+```{r}
+1 + 1
+```
+
+The content can contain inline 
+code like
+`r round(pi * exp(1), 2)`, too.
+````
+
+:::
+
+::: {.column width=43%}
+
+We write text in **Markdown** language.
+
+- Tea
+- Milk
+- Biscuits
+
+```{r, echo = TRUE, eval = TRUE}
+1 + 1
+```
+
+The content can contain inline 
+code like
+`r round(pi * exp(1), 2)`, too.
+
+:::
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
