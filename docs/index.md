@@ -98,8 +98,14 @@ As an example, for syllabus documents the schedule template remains the same but
   <img src="figures/syllabus.png">
 </kbd>
 
-
-
 Download a sample syllabus document from my SM-4335 module: [Syllabus](samples/sm4335-syllabus.pdf) 
 
+### Academic posters
 
+Using the beamer class, we can produce professionally formatted academic posters.
+
+<kbd>
+  <img src="figures/poster.png">
+</kbd>
+
+Here's a sample academic poster: [Poster](https://phd.haziqj.ml/my-phd-poster.pdf)
