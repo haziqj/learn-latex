@@ -382,12 +382,12 @@ knitr::include_graphics("figure/00-haidaosuanjing.jpg")
 
 :::
 
-## For teaching
+## For teaching and learning
 
 - Setting of question papers (assignments, tests, exams, etc.)
 - Syllabus documents
 - Presentations
-
+- Academic posters
 
 # Getting started
 
