@@ -254,8 +254,10 @@ tibble(
 
 ### Citations
 
+\justifying
 Sometimes, however, what others tell us is important as *corroboration* of what we have already found out (or think we have found out) for ourselves.
-The Scottish philosopher Thomas Reid makes this point in connection with mathematical research in the belief that, if it applies to the science 'in which, of all sciences, authority is acknowledged to have least weight' \cite{reid2002thomas}, it will be even more significant in other areas of thought and practice... Russell, as we shall see in a later chapter, considered this aspect of our reliance upon testimony essential to the understanding of what it is to be a physical thing and he criticized logical positivism for its failure to appreciate the implications of this point \cite{russell2007logic}.
+The Scottish philosopher Thomas Reid makes this point in connection with mathematical research in the belief that, if it applies to the science 'in which, of all sciences, authority is acknowledged to have least weight' \cite{reid2002thomas}, it will be even more significant in other areas of thought and practice\ldots
+Russell, as we shall see in a later chapter, considered this aspect of our reliance upon testimony essential to the understanding of what it is to be a physical thing and he criticized logical positivism for its failure to appreciate the implications of this point \cite{russell2007logic}.
 In the Analysis of Matter he says explicitly, 'I mean here by "objective" not anything metaphysical but merely "agreeing with the testimony of others"' \cite{russell2015analysis}.
 
 \vspace{1em}
@@ -269,18 +271,37 @@ Excerpt from *Testimony: A Philosophical Study* by C. A. J. Coady (1992)
 
 ### Mathematics
 
-
-::: {.theorem name="Central Limit Theorem"}
-\label{thm:clt}
-Let $X_1,\dots,X_n$ be an independent random sample from a distribution whose mean is $\mu$ and variance is $\sigma^2$.
-Then $\bar X_n := \frac{1}{n}\sum_{i=1}^n X_i$ converges in distribution to a random variable whose density function is
-\begin{equation}
-\label{eq:clt}
-f(x) = \frac{1}{\sqrt{2\pi}} \exp\left[ -\frac{1}{2}\left(\frac{x - \mu}{\sigma/\sqrt n} \right)^2 \right]
+For $i=1,\dots,n$, let 
+\begin{equation}\label{mod1}
+\begin{gathered}
+y_i = f(x_i) + \epsilon_i \\
+(\epsilon_1,\dots,\epsilon_n)^\top \sim \N_n(0, \Psi^{-1}),
+\end{gathered}
 \end{equation}
+where $y_i\in\bbR$, $x_i\in\mathcal X$, and $f\in\mathcal F$ a reproducing kernel Hilbert space (RKHS) of functions with kernel $h:\mathcal X \times \mathcal X \to \mathbb R$.
+
+::: {.lemma name="Fisher information for regression function"}
+\label{thm:fisherinformation}
+For the normal model \eqref{mod1} with log-likelihood $\ell$, the Fisher information for $f$ is
+\begin{equation}
+\cI_f = -\E\nabla^2 \ell(f|y) = \sum_{i=1}^n\sum_{j=1}^n \psi_{ij}h(\cdot,x_i) \otimes h(\cdot,x_j) \label{eq:fisherinfo}
+\end{equation}
+where '$\otimes$' is the tensor product of two vectors in $\mathcal F$.
 :::
 
-The proof of Theorem \ref{thm:clt} uses *characteristic functions*, whereby the standardised version of \eqref{eq:clt} is obtained in the limit as $n\to\infty$.
+The  bilinear form \eqref{eq:fisherinfo} in Lemma \ref{thm:fisherinformation} is a consequence of variational calculus.
+
+<!-- ::: {.theorem name="Central Limit Theorem"} -->
+<!-- \label{thm:clt} -->
+<!-- Let $X_1,\dots,X_n$ be an independent random sample from a distribution whose mean is $\mu$ and variance is $\sigma^2$. -->
+<!-- Then $\bar X_n := \frac{1}{n}\sum_{i=1}^n X_i$ converges in distribution to a random variable whose density function is -->
+<!-- \begin{equation} -->
+<!-- \label{eq:clt} -->
+<!-- f(x) = \frac{1}{\sqrt{2\pi}} \exp\left[ -\frac{1}{2}\left(\frac{x - \mu}{\sigma/\sqrt n} \right)^2 \right] -->
+<!-- \end{equation} -->
+<!-- ::: -->
+
+<!-- The proof of Theorem \ref{thm:clt} uses *characteristic functions*, whereby the standardised version of \eqref{eq:clt} is obtained in the limit as $n\to\infty$. -->
 
 ### Chemical equations
 
@@ -332,13 +353,14 @@ The proof of Theorem \ref{thm:clt} uses *characteristic functions*, whereby the 
 
 ### Multilingual support
 
+
 \vspace{-2em}
 
 ::: {.columns}
 
 ::: {.column width=48%}
-
-```{r aljabr, out.width = "40%"}
+\justifying
+```{r aljabr, out.height = "45%"}
 knitr::include_graphics("figure/00-aljabr.jpg")
 ```
 
@@ -350,8 +372,8 @@ knitr::include_graphics("figure/00-aljabr.jpg")
 :::
 
 ::: {.column width=48%}
-
-```{r haidao, out.width = "40%"}
+\justifying
+```{r haidao, out.height = "45%"}
 knitr::include_graphics("figure/00-haidaosuanjing.jpg")
 ```
 
@@ -542,7 +564,7 @@ $ % & #
 ### Exercise
 
 
-:::: {.varblock latex="{Exercise (Typesetting Text)}"}
+:::: {.varblock latex="{Exercise 1 (Typesetting Text)}"}
 
 Typeset the following paragraph\footnote{\url{http://en.wikipedia.org/wiki/Economy_of_the_United_States}} in \LaTeX :
 <!-- Typeset the following paragraph^[http://en.wikipedia.org/wiki/Economy_of_the_United_States] in \LaTeX : -->
@@ -836,18 +858,16 @@ with the `align*` environment.
 
 ### Exercise
 
-
-
 :::: {.varblock latex="{Exercise 2 (Maths)}"}
 
 Typeset the following paragraph in \LaTeX :
 
-> Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically
-distributed random variables with $\operatorname{E}[X_i] = \mu$ and
-$\operatorname{Var}[X_i] = \sigma^2 < \infty$, and let
-\begin{equation*}
+> Let $X_1, X_2, \dots, X_n$ be a sequence of independent and identically
+distributed random variables with mean $\mu$ and
+variance $\sigma^2 < \infty$, and let
+\begin{equation}
 S_n = \frac{1}{n}\sum_{i=1}^{n} X_i
-\end{equation*}
+\end{equation}
 denote their mean. Then as $n$ approaches infinity, the random variables
 $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $N(0, \sigma^2)$.
 

@@ -1,7 +1,7 @@
 \documentclass[,aspectratio=43]{beamer}
 
 \usepackage{empheq}
-
+\usepackage{ragged2e}
 
 % Load theme ---------------------------------------------------------------------------------
 
@@ -607,13 +607,15 @@ y = \alpha + \beta x
 
 \begin{frame}{Citations}
 \protect\hypertarget{citations}{}
+\justifying
+
 Sometimes, however, what others tell us is important as
 \emph{corroboration} of what we have already found out (or think we have
 found out) for ourselves. The Scottish philosopher Thomas Reid makes
 this point in connection with mathematical research in the belief that,
 if it applies to the science `in which, of all sciences, authority is
 acknowledged to have least weight' \cite{reid2002thomas}, it will be
-even more significant in other areas of thought and practice\ldots{}
+even more significant in other areas of thought and practice\ldots
 Russell, as we shall see in a later chapter, considered this aspect of
 our reliance upon testimony essential to the understanding of what it is
 to be a physical thing and he criticized logical positivism for its
@@ -635,20 +637,26 @@ Excerpt from \emph{Testimony: A Philosophical Study} by C. A. J. Coady
 
 \begin{frame}{Mathematics}
 \protect\hypertarget{mathematics}{}
-\begin{theorem}[Central Limit Theorem]
-\label{thm:clt} Let \(X_1,\dots,X_n\) be an independent random sample
-from a distribution whose mean is \(\mu\) and variance is \(\sigma^2\).
-Then \(\bar X_n := \frac{1}{n}\sum_{i=1}^n X_i\) converges in
-distribution to a random variable whose density function is
-\begin{equation}
-\label{eq:clt}
-f(x) = \frac{1}{\sqrt{2\pi}} \exp\left[ -\frac{1}{2}\left(\frac{x - \mu}{\sigma/\sqrt n} \right)^2 \right]
-\end{equation}
-\end{theorem}
+For \(i=1,\dots,n\), let \begin{equation}\label{mod1}
+\begin{gathered}
+y_i = f(x_i) + \epsilon_i \\
+(\epsilon_1,\dots,\epsilon_n)^\top \sim \N_n(0, \Psi^{-1}),
+\end{gathered}
+\end{equation} where \(y_i\in\bbR\), \(x_i\in\mathcal X\), and
+\(f\in\mathcal F\) a reproducing kernel Hilbert space (RKHS) of
+functions with kernel \(h:\mathcal X \times \mathcal X \to \mathbb R\).
 
-The proof of Theorem \ref{thm:clt} uses \emph{characteristic functions},
-whereby the standardised version of \eqref{eq:clt} is obtained in the
-limit as \(n\to\infty\).
+\begin{lemma}[Fisher information for regression function]
+\label{thm:fisherinformation} For the normal model \eqref{mod1} with
+log-likelihood \(\ell\), the Fisher information for \(f\) is
+\begin{equation}
+\cI_f = -\E\nabla^2 \ell(f|y) = \sum_{i=1}^n\sum_{j=1}^n \psi_{ij}h(\cdot,x_i) \otimes h(\cdot,x_j) \label{eq:fisherinfo}
+\end{equation} where `\(\otimes\)' is the tensor product of two vectors
+in \(\mathcal F\).
+\end{lemma}
+
+The bilinear form \eqref{eq:fisherinfo} in Lemma
+\ref{thm:fisherinformation} is a consequence of variational calculus.
 \end{frame}
 
 \begin{frame}{Chemical equations}
@@ -706,7 +714,9 @@ limit as \(n\to\infty\).
 
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
-\begin{center}\includegraphics[width=0.4\linewidth]{figure/00-aljabr} \end{center}
+\justifying
+
+\begin{center}\includegraphics[width=1\linewidth,height=0.45\textheight]{figure/00-aljabr} \end{center}
 
 \textarabic{
 الْكِتَابْ الْمُخْتَصَرْ فِيْ حِسَابْ الْجَبْرْ وَالْمُقَابَلَة
@@ -717,7 +727,9 @@ also known as \textarabic{الجبر} (Al-Jabr), written by \textarabic{
 \end{column}
 
 \begin{column}{0.48\textwidth}
-\begin{center}\includegraphics[width=0.4\linewidth]{figure/00-haidaosuanjing} \end{center}
+\justifying
+
+\begin{center}\includegraphics[width=1\linewidth,height=0.45\textheight]{figure/00-haidaosuanjing} \end{center}
 
 海岛算经 (Hǎidǎo suàn jīng--The Sea Island Mathematical Manual) was
 written by 刘徽 (Liú Huī) ca. 200 CE. The Chinese were aware of a good
@@ -968,7 +980,7 @@ Double quotes: ``text''.
 
 \begin{frame}{Exercise}
 \protect\hypertarget{exercise}{}
-\begin{varblock}{Exercise (Typesetting Text)}
+\begin{varblock}{Exercise 1 (Typesetting Text)}
 Typeset the following
 paragraph\footnote{\url{http://en.wikipedia.org/wiki/Economy_of_the_United_States}}
 in \LaTeX :
@@ -1356,15 +1368,13 @@ blank lines in equations--don't put blank lines in your mathematics.
 Typeset the following paragraph in \LaTeX :
 
 \begin{quote}
-Let \(X_1, X_2, \ldots, X_n\) be a sequence of independent and
-identically distributed random variables with
-\(\operatorname{E}[X_i] = \mu\) and
-\(\operatorname{Var}[X_i] = \sigma^2 < \infty\), and let
-\begin{equation*}
+Let \(X_1, X_2, \dots, X_n\) be a sequence of independent and
+identically distributed random variables with mean \(\mu\) and variance
+\(\sigma^2 < \infty\), and let \begin{equation}
 S_n = \frac{1}{n}\sum_{i=1}^{n} X_i
-\end{equation*} denote their mean. Then as \(n\) approaches infinity,
-the random variables \(\sqrt{n}(S_n - \mu)\) converge in distribution to
-a normal \(N(0, \sigma^2)\).
+\end{equation} denote their mean. Then as \(n\) approaches infinity, the
+random variables \(\sqrt{n}(S_n - \mu)\) converge in distribution to a
+normal \(N(0, \sigma^2)\).
 \end{quote}
 
 Click
